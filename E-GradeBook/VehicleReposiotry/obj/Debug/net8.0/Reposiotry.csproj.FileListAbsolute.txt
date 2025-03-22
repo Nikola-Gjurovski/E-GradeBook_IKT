@@ -1,0 +1,15 @@
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\bin\Debug\net8.0\Reposiotry.deps.json
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\bin\Debug\net8.0\Reposiotry.dll
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\bin\Debug\net8.0\Reposiotry.pdb
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\bin\Debug\net8.0\Domain.dll
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\bin\Debug\net8.0\Domain.pdb
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.csproj.Up2Date
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.dll
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\refint\Reposiotry.dll
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\Reposiotry.pdb
+C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\VehicleReposiotry\obj\Debug\net8.0\ref\Reposiotry.dll
