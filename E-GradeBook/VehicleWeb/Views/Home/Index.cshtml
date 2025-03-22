@@ -24,7 +24,12 @@
     }
 </style>
 
+@* @if (Model.User != null && Model.User.IsAdmin == true)
+{
+    <a class="btn btn-success" asp-area="" asp-controller="VehicleFormulas" asp-action="Index">Admin Panel</a>
+} *@
 
+<a class="btn btn-success" asp-area="" asp-controller="Subject" asp-action="Index">Subject</a>
 <div id="picture" class="mb-3  ">
     <div class="container mt-5 d-flex ">
 

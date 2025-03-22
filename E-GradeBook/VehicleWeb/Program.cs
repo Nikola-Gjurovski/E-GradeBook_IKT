@@ -1,9 +1,12 @@
 using Domain.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Services.Implementation;
+using Services.Interface;
 using VehicleReposiotry;
 using VehicleReposiotry.Implementation;
 using VehicleReposiotry.Interface;
+using VehicleReposiotry.Migrations;
 using VehicleServices.Implementation;
 using VehicleServices.Interface;
 
@@ -14,14 +17,16 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer("Server=DESKTOP-TU59AH8\\SQLEXPRESS;Database=E-GradeBook;Trusted_Connection=True;TrustServerCertificate=True;"));
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+builder.Services.AddTransient<IRoles, RoleRepository>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddTransient<ISubject, SubjectRepository>();
 builder.Services.AddTransient<IRoles, RoleRepository>();
 var app = builder.Build();
 
