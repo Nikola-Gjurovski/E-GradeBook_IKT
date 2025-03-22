@@ -8668,11 +8668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleWeb\\Web.csproj",
+      "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Web.csproj",
       "projectName": "Web",
-      "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleWeb\\Web.csproj",
+      "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Web.csproj",
       "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleWeb\\obj\\",
+      "outputPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8689,14 +8689,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj"
+            "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj"
+            "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj"
             },
-            "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj": {
-              "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj"
+            "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj": {
+              "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj"
             }
           }
         }

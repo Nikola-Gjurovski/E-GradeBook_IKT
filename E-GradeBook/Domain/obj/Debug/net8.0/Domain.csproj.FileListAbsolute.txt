@@ -47,3 +47,16 @@ C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\Domain\obj\Debug\net8.0\Domai
 C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Nikola\Desktop\New folder (8)\E-GradeBook\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\Domain\obj\Debug\net8.0\ref\Domain.dll

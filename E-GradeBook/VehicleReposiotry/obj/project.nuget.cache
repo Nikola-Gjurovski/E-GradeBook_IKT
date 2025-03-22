@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2UvtFxnVJRMKXjtaGJ5JqH2qgi1f9tkU0MPJKP47aM+yZcINT8U1K2Q81VBD3NKruK6VBG9Zfao9x+HDfyfB7w==",
+  "dgSpecHash": "IAItTjNjkZKs7p3Phf73RP7m/+F5RGJMhwy8ZisEStNG01UuOLZ2gftzdYlFYYgge+j69/RDhkyeeEyCW2ktLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

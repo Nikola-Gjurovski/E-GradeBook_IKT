@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OXWRMXEK3Btovz+Jye883xfeYWUhNcfukeb2DB38QhOAYmIqgagmo0TMWYkrB7mCn60axmwX3Bx2PFqwEGv9NQ==",
+  "dgSpecHash": "4+lmqOSAFKz2noj80U2mZWK6k16ptWXiwTP43BN8Tqz6KfquA+PduRC145HUKTdDvOFrs2sQDpJ/yuWLBJgOtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleWeb\\Web.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

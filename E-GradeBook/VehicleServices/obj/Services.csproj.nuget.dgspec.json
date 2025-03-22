@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj": {}
+    "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
         "projectName": "Reposiotry",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj"
+              "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\Services.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleServices\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikola\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -176,11 +176,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\Domain\\Domain.csproj"
+              "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
-                "projectPath": "C:\\Users\\Nikola\\Desktop\\New folder (8)\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj"
+              "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Reposiotry.csproj"
               }
             }
           }
