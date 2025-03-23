@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Professors.js",
+      "PackagePath": "staticwebassets\\js\\Professors.js"
+    },
+    {
+      "Id": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Students.js",
+      "PackagePath": "staticwebassets\\js\\Students.js"
+    },
+    {
       "Id": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

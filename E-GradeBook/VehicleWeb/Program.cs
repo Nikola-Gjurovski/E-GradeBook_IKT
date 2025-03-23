@@ -27,7 +27,7 @@ builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 builder.Services.AddTransient<IRoles, RoleRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<ISubject, SubjectRepository>();
-builder.Services.AddTransient<IRoles, RoleRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

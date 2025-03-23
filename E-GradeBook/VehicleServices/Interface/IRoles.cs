@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,10 @@ namespace VehicleServices.Interface
     public interface IRoles
     {
         bool check(string userId);
+        List<ApplicationUser> getStudents();
+        List<ApplicationUser> getProfesors();
+        void postProfessor(string Id);
+        void deleteProfessor(string Id);
+        ApplicationUser getWantedUser(string userId);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Services.Interface;
@@ -32,27 +33,32 @@ namespace Web.Controllers
             return RedirectToAction("NotActive", "Proba");
 
         }
-        //public async Task<IActionResult> SetAdmin()
-        //{
-        //    UsersDto usersDto = new UsersDto();
-        //    usersDto.users = roles.getUsers();
-        //    return View(usersDto);
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> SetAdmin(UsersDto usersDto)
-        //{
-        //    roles.postUser(usersDto.Id);
-        //    TempData["SuccessMessage"] = "User has been successfully set as admin.";
-        //    return RedirectToAction("SetAdmin");
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> SetAdmin(string Id)
-        //{
-        //    roles.postUser(Id);
-        //    TempData["SuccessMessage"] = "User has been successfully set as admin.";
-        //    return RedirectToAction("SetAdmin");
-        //}
-
+        public async Task<IActionResult> SetProfessors()
+        {
+            UsersDTO usersDto = new UsersDTO();
+            usersDto.users = roles.getStudents();
+            return View(usersDto);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SetProfessors(UsersDTO usersDto)
+        {
+            roles.postProfessor(usersDto.Id);
+            TempData["SuccessMessage"] = "User has been successfully set as professor.";
+            return RedirectToAction("SetProfessors");
+        }
+        public async Task<IActionResult> Professors()
+        {
+            UsersDTO usersDto = new UsersDTO();
+            usersDto.users = roles.getProfesors();
+            return View(usersDto);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Professors(UsersDTO usersDto)
+        {
+            roles.deleteProfessor(usersDto.Id);
+            TempData["SuccessMessage"] = "User no longer has professor privileges";
+            return RedirectToAction("Professors");
+        }
         // GET: Subjects/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
@@ -163,7 +169,31 @@ namespace Web.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-     
-       
+        #region API CALLS
+        [HttpGet]
+        public IActionResult GetAllStudents()
+        {
+            // Ensure VehicleFormula is loaded along with VehicleParts
+            var students = roles.getStudents();
+
+            return Json(new { data = students });
+
+        }
+        #endregion
+
+        #region API CALLS
+        [HttpGet]
+        public IActionResult GetAllProfessors()
+        {
+            // Ensure VehicleFormula is loaded along with VehicleParts
+            var professors = roles.getProfesors();
+
+            return Json(new { data = professors });
+
+        }
+        #endregion
+
+
+
     }
 }

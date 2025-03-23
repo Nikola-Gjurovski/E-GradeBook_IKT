@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2D8RpfCSuyqFR05cH1+vlVPXRcwADcs9Wa8gtMxpqow=",
+  "Hash": "gwL4OWuAJEpSDJUrZGy8vvVR/VZIYDdTaQvipciHB94=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -1233,6 +1233,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Professors.js",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "js/Professors.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Professors.js"
+    },
+    {
       "Identity": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\site.js",
       "SourceId": "Web",
       "SourceType": "Discovered",
@@ -1250,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Students.js",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "js/Students.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Students.js"
     },
     {
       "Identity": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
