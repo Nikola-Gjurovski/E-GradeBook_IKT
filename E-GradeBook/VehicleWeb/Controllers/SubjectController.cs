@@ -43,7 +43,7 @@ namespace Web.Controllers
         public async Task<IActionResult> SetProfessors(UsersDTO usersDto)
         {
             roles.postProfessor(usersDto.Id);
-            TempData["SuccessMessage"] = "User has been successfully set as professor.";
+            TempData["SuccessMessage"] = "Корисникот е додаден како професор";
             return RedirectToAction("SetProfessors");
         }
         public async Task<IActionResult> Professors()
@@ -56,11 +56,11 @@ namespace Web.Controllers
         public async Task<IActionResult> Professors(UsersDTO usersDto)
         {
             roles.deleteProfessor(usersDto.Id);
-            TempData["SuccessMessage"] = "User no longer has professor privileges";
+            TempData["RemoveMessage"] = "Корисникот ги нема повеќе привилегиите на професор";
             return RedirectToAction("Professors");
         }
         // GET: Subjects/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        public async Task<IActionResult> Details(Guid id)
         {
             if (id == null)
             {
@@ -100,7 +100,7 @@ namespace Web.Controllers
         }
 
         // GET: Subjects/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        public async Task<IActionResult> Edit(Guid id)
         {
             if (id == null)
             {
@@ -143,7 +143,7 @@ namespace Web.Controllers
         }
 
         // GET: Subjects/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
+        public async Task<IActionResult> Delete(Guid id)
         {
             if (id == null)
             {
@@ -160,12 +160,116 @@ namespace Web.Controllers
             return View(Subject);
         }
 
+        public IActionResult AddProfessor(Guid Id)
+        {
+            
+            
+
+           
+            var model = _SubjectService.GetProfessor(Id);
+            return View(model);
+        }
+
+        public IActionResult AddStudent(Guid Id)
+        {
+
+
+
+
+            var model = _SubjectService.GetStudent(Id);
+            return View(model);
+        }
+
+        public IActionResult SubjectStudent(string professorId, Guid subjectId)
+        {
+
+
+
+
+            var model = _SubjectService.GetSubjectProfessor(professorId,subjectId);
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult AddProfessor(SubjectProfessorsDTO model)
+        {
+            
+            bool flag =_SubjectService.PostProfessor(model);
+            if (!flag)
+            {
+                TempData["SuccessMessage"] = "Овој професор е веќе поставен на овој предмет";
+            }
+            return RedirectToAction("Details", "Subject", new { id = model.SubjectId });
+        }
+        [HttpPost]
+        public IActionResult AddStudent(SubjectProfessorsDTO model)
+        {
+
+            bool flag = _SubjectService.PostStudent(model);
+            if (!flag)
+            {
+                TempData["SuccessMessage"] = "Овој ученик  е веќе поставен на овој предмет";
+            }
+            return RedirectToAction("SubjectStudent", "Subject", new {
+                professorId = model.UserId,
+                subjectId = model.Id
+            });
+        }
+        public  async Task<IActionResult> DeleteProfessorSubject(string professorId ,Guid subjectId)
+        {
+            if (professorId == null || subjectId == null)
+            {
+                return NotFound();
+            }
+
+            var Subject = _SubjectService.GetSubjectProfessor(professorId,subjectId);
+
+            if (Subject == null)
+            {
+                return NotFound();
+            }
+
+            return View(Subject);
+        }
+        [HttpPost, ActionName("DeleteProfessorSubject")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteProfessorSubjectConfirmed(Guid Id, Guid SubjectId)
+        {
+            _SubjectService.DeleteProfessorSubject(Id);
+            var model = _SubjectService.GetDetailsForSubject(SubjectId);
+
+            return RedirectToAction("Details", "Subject", new { id = model.Id });
+        }
+        public async Task<IActionResult> DeleteStudentSubject(Guid Id)
+        {
+
+            var Subject = _SubjectService.GetStudentProfessor(Id);
+
+            if (Subject == null)
+            {
+                return NotFound();
+            }
+
+            return View(Subject);
+        }
+        [HttpPost, ActionName("DeleteStudentSubject")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteStudentSubjectConfirmed(Guid Id, Guid SubjectId,String ProfessorId)
+        {
+            _SubjectService.DeleteStudentSubject(Id);
+           
+
+            return RedirectToAction("SubjectStudent", "Subject", new
+            {
+                professorId = ProfessorId,
+                subjectId = SubjectId
+            });
+        }
         // POST: Subjects/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
+        public async Task<IActionResult> DeleteConfirmed(Guid Id, Guid SubjectId)
         {
-            _SubjectService.DeleteSubject(id);
+            _SubjectService.DeleteSubject(Id);
 
             return RedirectToAction(nameof(Index));
         }

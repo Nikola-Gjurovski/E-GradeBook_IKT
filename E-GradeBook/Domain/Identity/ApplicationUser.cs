@@ -14,5 +14,8 @@ namespace Domain.Identity
         public string? Adress { get; set; }
         public bool? IsAdmin { get; set; }
         public bool ?IsProfessor { get; set; }
+
+        public ICollection<SubjectProfessor> ?TeachingSubjects { get; set; }
+        public ICollection<SubjectStudent>? EnrolledSubjects { get; set; }
     }
 }

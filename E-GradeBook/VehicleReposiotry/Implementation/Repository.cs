@@ -31,6 +31,18 @@ namespace VehicleReposiotry.Implementation
         {
             return entities.SingleOrDefault(s => s.Id == id);
         }
+        public T Get(Guid? id, params System.Linq.Expressions.Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = entities;
+
+            foreach (var includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return query.SingleOrDefault(e => e.Id == id);
+        }
+
         public void Insert(T entity)
         {
             if (entity == null)

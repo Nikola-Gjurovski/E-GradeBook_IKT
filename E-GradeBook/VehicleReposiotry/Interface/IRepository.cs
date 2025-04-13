@@ -11,6 +11,7 @@ namespace VehicleReposiotry.Interface
     {
         IEnumerable<T> GetAll();
         T Get(Guid? id);
+        T Get(Guid? id, params System.Linq.Expressions.Expression<Func<T, object>>[] includeProperties); // <-- Add this
         void Insert(T entity);
         void Update(T entity);
         void Delete(T entity);

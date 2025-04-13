@@ -1,6 +1,8 @@
 using Domain.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Reposiotry.Implementation;
+using Reposiotry.Interface;
 using Services.Implementation;
 using Services.Interface;
 using VehicleReposiotry;
@@ -25,6 +27,9 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
 builder.Services.AddTransient<IRoles, RoleRepository>();
+builder.Services.AddScoped(typeof(ISubjectInt), typeof(SubjectImp));
+builder.Services.AddScoped(typeof(ISubjectProfessor), typeof(SubjectProfessorRepository));
+builder.Services.AddScoped(typeof(ISubjectStudent), typeof(SubjectStudentRepository));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<ISubject, SubjectRepository>();
 

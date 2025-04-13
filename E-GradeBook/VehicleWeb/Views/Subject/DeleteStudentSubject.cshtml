@@ -1,0 +1,13 @@
+﻿@model Domain.SubjectStudent
+
+
+
+<h3>Дали сте сигурни дека сакате да го избиршете професорот @Model.Student.FirstName?</h3>
+
+
+<form asp-action="DeleteStudentSubject" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" name="SubjectId" value="@Model.SubjectProfessor.SubjectId" />
+    <input type="hidden" name="ProfessorId" value="@Model.SubjectProfessor.ApplicationUserId" />
+    <input type="submit" value="Delete" class="btn btn-danger" />
+</form>

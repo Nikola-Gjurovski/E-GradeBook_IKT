@@ -122,6 +122,50 @@ namespace VehicleReposiotry.Migrations
                     b.ToTable("Subjects");
                 });
 
+            modelBuilder.Entity("Domain.SubjectProfessor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<Guid>("SubjectId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("SubjectProfessors");
+                });
+
+            modelBuilder.Entity("Domain.SubjectStudent", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<Guid>("SubjectProfessorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("SubjectProfessorId");
+
+                    b.ToTable("SubjectStudents");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -259,6 +303,44 @@ namespace VehicleReposiotry.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.SubjectProfessor", b =>
+                {
+                    b.HasOne("Domain.Identity.ApplicationUser", "Professor")
+                        .WithMany("TeachingSubjects")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Subject", "Subject")
+                        .WithMany("Professors")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Professor");
+
+                    b.Navigation("Subject");
+                });
+
+            modelBuilder.Entity("Domain.SubjectStudent", b =>
+                {
+                    b.HasOne("Domain.Identity.ApplicationUser", "Student")
+                        .WithMany("EnrolledSubjects")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Domain.SubjectProfessor", "SubjectProfessor")
+                        .WithMany("ProfessorStudents")
+                        .HasForeignKey("SubjectProfessorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+
+                    b.Navigation("SubjectProfessor");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -308,6 +390,23 @@ namespace VehicleReposiotry.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Identity.ApplicationUser", b =>
+                {
+                    b.Navigation("EnrolledSubjects");
+
+                    b.Navigation("TeachingSubjects");
+                });
+
+            modelBuilder.Entity("Domain.Subject", b =>
+                {
+                    b.Navigation("Professors");
+                });
+
+            modelBuilder.Entity("Domain.SubjectProfessor", b =>
+                {
+                    b.Navigation("ProfessorStudents");
                 });
 #pragma warning restore 612, 618
         }

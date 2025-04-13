@@ -127,7 +127,7 @@ namespace EShopWebApplication.Areas.Identity.Pages.Account
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
                 user.Adress=Input.Address;
-                user.IsAdmin = false;
+                user.IsAdmin = true;
                 user.IsProfessor = false;
                 
                 var result = await _userManager.CreateAsync(user, Input.Password);
