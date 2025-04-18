@@ -14,5 +14,6 @@ namespace VehicleReposiotry.Interface
         void Insert(ApplicationUser entity);
         void Update(ApplicationUser entity);
         void Delete(ApplicationUser entity);
+        ApplicationUser Find(string email);
     }
 }

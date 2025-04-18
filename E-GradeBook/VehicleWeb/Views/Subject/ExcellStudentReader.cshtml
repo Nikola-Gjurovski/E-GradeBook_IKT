@@ -1,0 +1,12 @@
+﻿@model Domain.DTO.SubjectProfessorsDTO
+
+<form asp-controller="Subject" asp-action="ImportStudents" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="hidden" name="SubjectId" value="@Model.SubjectId" />
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="hidden" name="ProfessorId" value="@Model.ProfessorId" />
+        <input type="hidden" name="UserId" value="@Model.UserId" />
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-success">Додади ученици</button>
+</form>

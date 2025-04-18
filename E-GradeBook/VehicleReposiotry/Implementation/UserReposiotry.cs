@@ -27,11 +27,8 @@ namespace VehicleReposiotry.Implementation
 
         public ApplicationUser Get(string id)
         {
-            return entities
-               //.Include(z => z.ShoppingCart)
-               //.Include("ShoppingCart.ProductShoppingCarts")
-               //.Include("ShoppingCart.ProductShoppingCarts.Produtct")
-               .SingleOrDefault(s => s.Id == id);
+            return entities.Include(u => u.TeachingSubjects)
+        .ThenInclude(ts => ts.Subject).SingleOrDefault(s => s.Id == id);
         }
         public void Insert(ApplicationUser entity)
         {
@@ -61,6 +58,11 @@ namespace VehicleReposiotry.Implementation
             }
             entities.Remove(entity);
             context.SaveChanges();
+        }
+
+        public ApplicationUser Find(string email)
+        {
+            return entities.SingleOrDefault(s => s.Email == email);
         }
     }
 }

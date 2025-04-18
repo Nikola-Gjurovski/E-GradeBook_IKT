@@ -157,42 +157,7 @@ namespace Services.Implementation
 
         }
 
-        //public void DeleteProfessorSubject(Guid Id)
-        //{
-
-
-        //    var model = _subjectProfessor.GetById(Id);
-
-        //    if (model == null) return;
-
-
-        //    var user = _userRepository.Get(model.ApplicationUserId);
-        //    var subject = _subjectRepository.GetSubjectById(model.SubjectId);
-
-        //    if (user != null && user.TeachingSubjects.Contains(model))
-        //    {
-        //        user.TeachingSubjects.Remove(model);
-
-        //    }
-
-        //    if (subject != null && subject.Professors.Contains(model))
-        //    {
-        //        subject.Professors.Remove(model);
-
-        //    }
-        //    foreach( var items in model.ProfessorStudents)
-        //    {
-        //        this.DeleteStudentSubject(items.Id);
-        //    }
-
-
-        //    _subjectProfessor.DeleteSubject(model);
-        //    _userRepository.Update(user);
-        //    _subjectRepository.UpdateSubject(subject);
-
-
-
-        //}
+        
         public void DeleteProfessorSubject(Guid Id)
         {
             var model = _subjectProfessor.GetById(Id);
@@ -214,13 +179,13 @@ namespace Services.Implementation
             var user = _userRepository.Get(model.ApplicationUserId);
             var subject = _subjectRepository.GetSubjectById(model.SubjectId);
 
-            if (user != null && user.TeachingSubjects.Contains(model))
+            if (user != null && user.TeachingSubjects!=null && user.TeachingSubjects.Contains(model))
             {
                 user.TeachingSubjects.Remove(model);
                 _userRepository.Update(user);
             }
 
-            if (subject != null && subject.Professors.Contains(model))
+            if (subject != null && subject.Professors!=null && subject.Professors.Contains(model))
             {
                 subject.Professors.Remove(model);
                 _subjectRepository.UpdateSubject(subject);
@@ -318,6 +283,11 @@ namespace Services.Implementation
         public SubjectStudent GetStudentProfessor(Guid SubjectId)
         {
             return _subjectStudent.GetById(SubjectId);
+        }
+
+        public List<SubjectProfessor> GetAllSubjects(string ProfessorId)
+        {
+            return _subjectProfessor.GetAllSubjects(ProfessorId);
         }
     }
 }

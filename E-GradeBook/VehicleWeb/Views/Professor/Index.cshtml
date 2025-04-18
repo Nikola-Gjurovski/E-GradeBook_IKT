@@ -1,0 +1,40 @@
+﻿@model Domain.Identity.ApplicationUser
+
+@{
+    ViewData["Title"] = "Subjects Taught by Professor";
+}
+
+<h2>Вашите предмети на кои предавате</h2>
+
+@if (Model.TeachingSubjects != null && Model.TeachingSubjects.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Име на предметот</th>
+                <th>Опис</th>
+                <th>Година на која се предава</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subjectProfessor in Model.TeachingSubjects)
+            {
+                <tr>
+                    <td>@subjectProfessor.Subject.Name</td>
+                    <td>@subjectProfessor.Subject.Description</td>
+                    <td>@subjectProfessor.Subject.YearOfStudy</td>
+                    <td>
+                        <a class="btn btn-info" asp-controller="Professor" asp-action="Details" asp-route-SubjectId="@subjectProfessor.SubjectId"
+                       asp-route-ProfessorId="@Model.Id">
+                            Детали
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>This professor is not currently teaching any subjects.</p>
+}

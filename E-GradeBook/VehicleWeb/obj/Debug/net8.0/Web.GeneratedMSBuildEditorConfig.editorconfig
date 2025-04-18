@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmFcTm90QWN0aXZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,6 +116,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/ExcellProfessorReader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxFeGNlbGxQcm9mZXNzb3JSZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/ExcellStudentReader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxFeGNlbGxTdHVkZW50UmVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/Index.cshtml]

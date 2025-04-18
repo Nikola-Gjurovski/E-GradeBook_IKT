@@ -15,5 +15,6 @@ namespace Reposiotry.Interface
         public SubjectProfessor GetSubjectProfessor(string ProfessorId, Guid SubjectId);
         public SubjectProfessor GetById( Guid Id);
         public void Update(SubjectProfessor Subject);
+        List<SubjectProfessor> GetAllSubjects(string ProfessorId);
     }
 }

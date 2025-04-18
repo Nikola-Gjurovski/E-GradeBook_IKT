@@ -42,6 +42,7 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a class="btn btn-success" asp-action="AddProfessor" asp-route-Id="@Model?.Id">Додади професор</a> |
+    <a class="btn btn-success mb-3" asp-action="ExcellProfessorReader" asp-route-SubjectId="@Model?.Id">Импортирај професори</a>
     <a asp-action="Index">Back to List</a>
 </div>
 <table class="table">

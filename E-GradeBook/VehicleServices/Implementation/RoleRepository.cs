@@ -22,12 +22,21 @@ namespace VehicleServices.Implementation
             var loggedUser = _userRepository.Get(userId);
             return loggedUser.IsAdmin==true;
         }
-
+        public bool checkProfessor(string userId)
+        {
+            var loggedUser = _userRepository.Get(userId);
+            return loggedUser.IsProfessor == true;
+        }
         public void deleteProfessor(string Id)
         {
             var user = _userRepository.Get(Id);
             user.IsProfessor = false;
             _userRepository.Update(user);
+        }
+
+        public ApplicationUser find(string email)
+        {
+            return _userRepository.Find(email);
         }
 
         public List<ApplicationUser> getProfesors()

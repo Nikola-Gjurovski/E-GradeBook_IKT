@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WDyflHBOvzKdvc3aN/DamOYEiJQ1dKZpNXGwzIWgDnb/v+CKz1FA1QsmK2SA/3Ew8a+6uqiiSuEgX/Qk8cQeLw==",
+  "dgSpecHash": "zoVdDe4D8p1Hw5P3oOvGchVsoqA3zI2piFmxBkJ12xxkZN8s64cUt2P9vL5ueNPcEGyicKjy+r5D+88f/ufpgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Nikola\\.nuget\\packages\\exceldatareader\\3.7.0\\exceldatareader.3.7.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.6\\microsoft.aspnetcore.cryptography.internal.8.0.6.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.6\\microsoft.aspnetcore.cryptography.keyderivation.8.0.6.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.2\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.2.nupkg.sha512",

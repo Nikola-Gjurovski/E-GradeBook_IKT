@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4+lmqOSAFKz2noj80U2mZWK6k16ptWXiwTP43BN8Tqz6KfquA+PduRC145HUKTdDvOFrs2sQDpJ/yuWLBJgOtA==",
+  "dgSpecHash": "v1SX67dF0wCHNNjCKAfCbPWH88c01CpEUmGvq9FFZeDvDpTgGsLTZrasAyrZW3zes4EYeFrIfaICGtTxew+kWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Nikola\\.nuget\\packages\\exceldatareader\\3.7.0\\exceldatareader.3.7.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

@@ -3,7 +3,8 @@
 
 
 <h3>@Model.Professor.FirstName - @Model.Subject.Name</h3>
-<a class="btn btn-success" asp-action="AddStudent" asp-route-Id="@Model.Id">Додади ученик</a> |
+<a class="btn btn-success" asp-action="AddStudent" asp-route-Id="@Model.Id">Додади ученик</a>
+<a class="btn btn-success mb-3" asp-action="ExcellStudentReader" asp-route-Id="@Model.Id">Импортирај ученици</a>|
 <a asp-action="Index">Back to List</a>
 
 <table class="table">

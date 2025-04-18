@@ -11,6 +11,7 @@ namespace Services.Interface
     public interface ISubject
     {
         List<Subject> GetAllSubjects();
+        List<SubjectProfessor> GetAllSubjects(string ProfessorId);
         Subject GetDetailsForSubject(Guid id);
         void CreateNewSubject(Subject p);
         void UpdateExistingSubject(Subject p);

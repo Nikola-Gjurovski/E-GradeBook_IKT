@@ -585,3 +585,4 @@ C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb\obj\De
 C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb\obj\Debug\net8.0\Web.pdb
 C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb\obj\Debug\net8.0\Web.genruntimeconfig.cache
 C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb\obj\Debug\net8.0\ref\Web.dll
+C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb\bin\Debug\net8.0\ExcelDataReader.dll

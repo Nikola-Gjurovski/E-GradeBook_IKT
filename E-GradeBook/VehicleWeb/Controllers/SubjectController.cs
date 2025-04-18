@@ -1,5 +1,6 @@
 ﻿using Domain;
 using Domain.DTO;
+using ExcelDataReader;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Services.Interface;
@@ -192,7 +193,8 @@ namespace Web.Controllers
         [HttpPost]
         public IActionResult AddProfessor(SubjectProfessorsDTO model)
         {
-            
+          
+
             bool flag =_SubjectService.PostProfessor(model);
             if (!flag)
             {
@@ -211,7 +213,7 @@ namespace Web.Controllers
             }
             return RedirectToAction("SubjectStudent", "Subject", new {
                 professorId = model.UserId,
-                subjectId = model.Id
+                subjectId = model.Id 
             });
         }
         public  async Task<IActionResult> DeleteProfessorSubject(string professorId ,Guid subjectId)
@@ -273,6 +275,111 @@ namespace Web.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult ExcellProfessorReader( Guid SubjectId)
+        {
+            var model = new SubjectDTO
+            {
+                SubjectId = SubjectId
+            };
+            return View(model);
+        }
+
+       
+        public IActionResult ImportProfessors(IFormFile file, Guid SubjectId)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            using (var stream = file.OpenReadStream())
+            {
+                List<SubjectProfessorsDTO> model = getAllUsersFromStream(stream, SubjectId);
+                foreach (var item in model)
+                {
+                    bool flag = _SubjectService.PostProfessor(item);
+                }
+            }
+
+            return RedirectToAction("Details", "Subject", new { id = SubjectId });
+        }
+
+
+        
+        private List<SubjectProfessorsDTO> getAllUsersFromStream(Stream stream, Guid SubjectId)
+        {
+            List<SubjectProfessorsDTO> users = new List<SubjectProfessorsDTO>();
+
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+            using (var reader = ExcelReaderFactory.CreateReader(stream))
+            {
+                while (reader.Read())
+                {
+                    if (roles.find(reader.GetValue(0)?.ToString()) != null && roles.find(reader.GetValue(0)?.ToString()).IsProfessor ==true)
+                    {
+                        users.Add(new SubjectProfessorsDTO
+                        {
+                      
+                        ProfessorId = roles.find(reader.GetValue(0)?.ToString()).Id,
+                        SubjectId = SubjectId
+                    });
+                }
+                }
+            }
+
+            return users;
+        }
+        public IActionResult ExcellStudentReader(Guid Id)
+        {
+
+            var model = _SubjectService.GetStudent(Id);
+            return View(model);
+        }
+        public IActionResult ImportStudents(IFormFile file, Guid SubjectId, Guid Id,string ProfessorId,string UserId)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
+
+            using (var stream = file.OpenReadStream())
+            {
+                List<SubjectProfessorsDTO> model = getAllStudentFromStream(stream, SubjectId);
+                foreach (var item in model)
+                {
+                    bool flag = _SubjectService.PostStudent(item);
+                }
+            }
+
+            return RedirectToAction("SubjectStudent", "Subject", new
+            {
+                professorId = UserId,
+                subjectId = Id
+            });
+        }
+        private List<SubjectProfessorsDTO> getAllStudentFromStream(Stream stream, Guid SubjectId)
+        {
+            List<SubjectProfessorsDTO> users = new List<SubjectProfessorsDTO>();
+
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+            using (var reader = ExcelReaderFactory.CreateReader(stream))
+            {
+                while (reader.Read())
+                {
+                    if (roles.find(reader.GetValue(0)?.ToString()) != null && roles.find(reader.GetValue(0)?.ToString()).IsProfessor == false)
+                    {
+                        users.Add(new SubjectProfessorsDTO
+                        {
+
+                            ProfessorId = roles.find(reader.GetValue(0)?.ToString()).Id,
+                            SubjectId = SubjectId
+                        });
+                    }
+                }
+            }
+
+            return users;
+        }
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAllStudents()

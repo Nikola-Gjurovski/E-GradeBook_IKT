@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V3BqJWdofyOuMw3livqFt46uRbsLHdrXOOSXymCTPYFGgosvXH3a4u0wfk/ENwFKyOcjp8UE2xGf4amoojbqGQ==",
+  "dgSpecHash": "VtlHCrGkMZj7B4pFFwPH3T+AmxANZekDp12p+cN/nxgvJou/4fCx7SmULTwOI/gJ4yBOHFO6Go1VOdGUoLvHew==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nikola\\.nuget\\packages\\exceldatareader\\3.7.0\\exceldatareader.3.7.0.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.6\\microsoft.aspnetcore.cryptography.internal.8.0.6.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.6\\microsoft.aspnetcore.cryptography.keyderivation.8.0.6.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

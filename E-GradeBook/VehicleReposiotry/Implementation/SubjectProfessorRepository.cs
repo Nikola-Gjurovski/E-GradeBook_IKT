@@ -48,6 +48,17 @@ namespace Reposiotry.Implementation
        .SingleOrDefaultAsync(x => x.ApplicationUserId == ProfessorId && x.SubjectId == SubjectId).Result;
 
         }
+        public List<SubjectProfessor> GetAllSubjects(string ProfessorId)
+        {
+            return  entities
+       .Include(x => x.Professor)
+       .Include(x => x.Subject)
+       .Include(x => x.ProfessorStudents)
+           .ThenInclude(ps => ps.Student)
+       .Where(x => x.ApplicationUserId == ProfessorId)
+       .ToList();
+
+        }
 
         public void Update(SubjectProfessor Subject)
         {

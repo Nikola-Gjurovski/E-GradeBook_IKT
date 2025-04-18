@@ -14,5 +14,6 @@ namespace Reposiotry.Interface
         public void AddSubject(Subject Subject);
         public void UpdateSubject(Subject Subject);
         public void DeleteSubject(Subject Subject);
+        
     }
 }
