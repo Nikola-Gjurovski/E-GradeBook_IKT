@@ -3,24 +3,120 @@
   "WorkspaceRootPath": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\professor\\grades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\professor\\grades.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\interface\\igradesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\interface\\igradesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\implementation\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\implementation\\gradeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\professor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\professor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\professor\\addgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\professor\\addgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\interface\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\interface\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\dto\\gradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\gradesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\subject\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\implementation\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\implementation\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\grades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\gradesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\gradesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\professor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\professor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\proba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\proba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\subjectprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\subjectprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\implementation\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\implementation\\subjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\interface\\igrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\igrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\subjectstudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\subjectstudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\implementation\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\implementation\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\subjectimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\subjectimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\interface\\isubjectint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\isubjectint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419125832_grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:VehicleReposiotry\\Migrations\\20250419125832_grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\subjectstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\subject\\subjectstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\proba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\proba\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\subjectprofessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,18 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\subject\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\subjectstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\subject\\subjectstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\interface\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\interface\\isubject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\controllers\\subjectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,22 +139,6 @@
       "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\userreposiotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\views\\subject\\addstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleservices\\implementation\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C374DD14-FCA1-4BA0-8802-E5EC6A1F8771}|VehicleServices\\Services.csproj|solutionrelative:vehicleservices\\implementation\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\subjectprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\subjectprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\dto\\subjectprofessorsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\subjectprofessorsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,20 +147,12 @@
       "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\isubjectprofessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\interface\\isubjectint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\isubjectint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\interface\\isubjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\isubjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\subjectimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\subjectimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\proba\\notactive.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -135,20 +195,8 @@
       "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\migrations\\20250413174100_checkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehiclereposiotry\\implementation\\subjectstudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7FABA88-A0C6-44E4-8E1D-6433AC2F6F48}|VehicleReposiotry\\Reposiotry.csproj|solutionrelative:vehiclereposiotry\\implementation\\subjectstudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\subjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\subjectstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\views\\subject\\deletestudentsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -161,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\controllers\\proba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\controllers\\proba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|solutionrelative:vehicleweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0048EB93-D4F9-4FB8-A1DB-897D25961098}|VehicleWeb\\Web.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\vehicleweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -246,10 +290,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\usersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|c:\\users\\nikola\\desktop\\public rep\\e-gradebook_ikt\\e-gradebook\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0B82CF25-FC5C-47F0-9800-87D94E99963E}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250409191520_subjectRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -347,7 +387,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
             },
             {
               "$type": "Bookmark",
@@ -355,86 +399,95 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "AddGrade.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\AddGrade.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Professor\\AddGrade.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\AddGrade.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Professor\\AddGrade.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAHoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-19T16:20:43.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProfessorController.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\ProfessorController.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Controllers\\ProfessorController.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\ProfessorController.cs",
               "RelativeToolTip": "VehicleWeb\\Controllers\\ProfessorController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAUwB8AAAAMAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAUwF4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T17:38:13.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SubjectRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\SubjectRepository.cs",
-              "RelativeDocumentMoniker": "VehicleServices\\Implementation\\SubjectRepository.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\SubjectRepository.cs",
-              "RelativeToolTip": "VehicleServices\\Implementation\\SubjectRepository.cs",
-              "ViewState": "AQIAAOAAAAAAAAAAAAAiwOoAAAAIAAAA",
+              "DocumentIndex": 3,
+              "Title": "GradeService.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\GradeService.cs",
+              "RelativeDocumentMoniker": "VehicleServices\\Implementation\\GradeService.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\GradeService.cs",
+              "RelativeToolTip": "VehicleServices\\Implementation\\GradeService.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAUwGUAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:41:34.956Z",
+              "WhenOpened": "2025-04-19T13:49:39.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Details.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Professor\\Details.cshtml",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Details.cshtml",
               "RelativeToolTip": "VehicleWeb\\Views\\Professor\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAQAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-18T18:30:45.326Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Proba\\Index.cshtml",
-              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Proba\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Proba\\Index.cshtml",
-              "RelativeToolTip": "VehicleWeb\\Views\\Proba\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Grades.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Grades.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Professor\\Grades.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Grades.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Professor\\Grades.cshtml",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAIkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T15:26:25.66Z",
+              "WhenOpened": "2025-04-19T15:21:55.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Index.cshtml",
-              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Professor\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Index.cshtml",
-              "RelativeToolTip": "VehicleWeb\\Views\\Professor\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAACQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T17:52:22.515Z",
+              "Title": "IGradesService.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Interface\\IGradesService.cs",
+              "RelativeDocumentMoniker": "VehicleServices\\Interface\\IGradesService.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Interface\\IGradesService.cs",
+              "RelativeToolTip": "VehicleServices\\Interface\\IGradesService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T13:19:16.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ISubject.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Interface\\ISubject.cs",
               "RelativeDocumentMoniker": "VehicleServices\\Interface\\ISubject.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Interface\\ISubject.cs",
               "RelativeToolTip": "VehicleServices\\Interface\\ISubject.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwA0AAAAtAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T15:38:52.062Z",
               "EditorCaption": ""
@@ -442,51 +495,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Details.cshtml",
-              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Details.cshtml",
-              "RelativeToolTip": "VehicleWeb\\Views\\Subject\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-09T19:30:08.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SubjectProfessorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:09:26.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SubjectStudent.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
-              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
-              "RelativeToolTip": "VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T14:11:32.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "SubjectController.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\SubjectController.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Controllers\\SubjectController.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\SubjectController.cs",
               "RelativeToolTip": "VehicleWeb\\Controllers\\SubjectController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAcwEsAAAAAAAAA",
+              "ViewState": "AQIAAFUBAAAAAAAAAAA3wGgBAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T17:26:40.212Z",
               "EditorCaption": ""
@@ -494,53 +508,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "VehicleWeb\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T15:27:45.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserReposiotry.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\UserReposiotry.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\UserReposiotry.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\UserReposiotry.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Implementation\\UserReposiotry.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB4AAAAmAAAA",
+              "Title": "SubjectRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\SubjectRepository.cs",
+              "RelativeDocumentMoniker": "VehicleServices\\Implementation\\SubjectRepository.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\SubjectRepository.cs",
+              "RelativeToolTip": "VehicleServices\\Implementation\\SubjectRepository.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAiwFsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:05:02.113Z",
+              "WhenOpened": "2025-03-22T15:41:34.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomePageDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\HomePageDTO.cs",
-              "RelativeDocumentMoniker": "Domain\\DTO\\HomePageDTO.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\HomePageDTO.cs",
-              "RelativeToolTip": "Domain\\DTO\\HomePageDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:22:53.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 9,
               "Title": "AddStudent.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\AddStudent.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\AddStudent.cshtml",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\AddStudent.cshtml",
               "RelativeToolTip": "VehicleWeb\\Views\\Subject\\AddStudent.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABOAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-13T14:26:52.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GradesDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\GradesDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTO\\GradesDTO.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\GradesDTO.cs",
+              "RelativeToolTip": "Domain\\DTO\\GradesDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T16:08:56.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Index.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Professor\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Professor\\Index.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Professor\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-18T17:52:22.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Grades.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Grades.cs",
+              "RelativeDocumentMoniker": "Domain\\Grades.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Grades.cs",
+              "RelativeToolTip": "Domain\\Grades.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:53:14.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GradesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\GradesRepository.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\GradesRepository.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\GradesRepository.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Implementation\\GradesRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA5wCMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T13:03:34.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Identity\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Identity\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Identity\\ApplicationUser.cs",
+              "RelativeToolTip": "Domain\\Identity\\ApplicationUser.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:03:40.628Z",
               "EditorCaption": ""
             },
             {
@@ -558,104 +611,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
+              "Title": "IGrades.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IGrades.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\IGrades.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IGrades.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Interface\\IGrades.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T13:02:17.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SubjectStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAqwBgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:58:39.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "RoleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\RoleRepository.cs",
               "RelativeDocumentMoniker": "VehicleServices\\Implementation\\RoleRepository.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Implementation\\RoleRepository.cs",
               "RelativeToolTip": "VehicleServices\\Implementation\\RoleRepository.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwDcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T17:08:20.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Identity\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Domain\\Identity\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Identity\\ApplicationUser.cs",
-              "RelativeToolTip": "Domain\\Identity\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:03:40.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SubjectProfessorsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\SubjectProfessorsDTO.cs",
-              "RelativeDocumentMoniker": "Domain\\DTO\\SubjectProfessorsDTO.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\SubjectProfessorsDTO.cs",
-              "RelativeToolTip": "Domain\\DTO\\SubjectProfessorsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T18:42:40.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ISubjectProfessor.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAmwBEAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T17:08:08.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "ISubjectInt.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectInt.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectInt.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectInt.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectInt.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Title": "20250419140126_updateGrades.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Migrations\\20250419140126_updateGrades.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T14:23:25.334Z",
+              "WhenOpened": "2025-04-19T14:01:26.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "ISubjectStudent.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectStudent.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectStudent.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectStudent.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectStudent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Program.cs",
+              "RelativeDocumentMoniker": "VehicleWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Program.cs",
+              "RelativeToolTip": "VehicleWeb\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACMAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T13:56:52.712Z",
+              "WhenOpened": "2025-03-22T15:07:05.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IUserRepository.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Interface\\IUserRepository.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBAAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:05:51.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "SubjectImp.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectImp.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\SubjectImp.cs",
               "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectImp.cs",
               "RelativeToolTip": "VehicleReposiotry\\Implementation\\SubjectImp.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwC8AAAAJAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAIwDUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T14:24:27.195Z",
               "EditorCaption": ""
@@ -663,6 +690,204 @@
             {
               "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "20250419125832_grade.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419125832_grade.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250419125832_grade.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250419125832_grade.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Migrations\\20250419125832_grade.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T12:58:32.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Subject.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Subject.cs",
+              "RelativeDocumentMoniker": "Domain\\Subject.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Subject.cs",
+              "RelativeToolTip": "Domain\\Subject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:34:27.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ISubjectInt.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectInt.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectInt.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectInt.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectInt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:23:25.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SubjectStudent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Subject\\SubjectStudent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:11:32.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\ApplicationDbContext.cs",
+              "RelativeToolTip": "VehicleReposiotry\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:04:54.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T17:22:18.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Proba\\Index.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Proba\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Proba\\Index.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Proba\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T15:26:25.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Details.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Details.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Subject\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-09T19:30:08.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SubjectProfessorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Implementation\\SubjectProfessorRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T17:09:26.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VehicleWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VehicleWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-22T15:27:45.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UserReposiotry.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\UserReposiotry.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\UserReposiotry.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\UserReposiotry.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Implementation\\UserReposiotry.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:05:02.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HomePageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\HomePageDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTO\\HomePageDTO.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\HomePageDTO.cs",
+              "RelativeToolTip": "Domain\\DTO\\HomePageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T17:22:53.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SubjectProfessorsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\SubjectProfessorsDTO.cs",
+              "RelativeDocumentMoniker": "Domain\\DTO\\SubjectProfessorsDTO.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\SubjectProfessorsDTO.cs",
+              "RelativeToolTip": "Domain\\DTO\\SubjectProfessorsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T18:42:40.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ISubjectProfessor.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectProfessor.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAmwBEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T17:08:08.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ISubjectStudent.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectStudent.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\ISubjectStudent.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\ISubjectStudent.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Interface\\ISubjectStudent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T13:56:52.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "VehicleReposiotry\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T15:05:51.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "NotActive.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Proba\\NotActive.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Proba\\NotActive.cshtml",
@@ -670,12 +895,11 @@
               "RelativeToolTip": "VehicleWeb\\Views\\Proba\\NotActive.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-22T15:26:27.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T15:26:27.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 39,
               "Title": "IRoles.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleServices\\Interface\\IRoles.cs",
               "RelativeDocumentMoniker": "VehicleServices\\Interface\\IRoles.cs",
@@ -683,12 +907,11 @@
               "RelativeToolTip": "VehicleServices\\Interface\\IRoles.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAcwAwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T17:14:41.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T17:14:41.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 40,
               "Title": "ExcellStudentReader.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\ExcellStudentReader.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\ExcellStudentReader.cshtml",
@@ -696,12 +919,11 @@
               "RelativeToolTip": "VehicleWeb\\Views\\Subject\\ExcellStudentReader.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T17:20:35.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T17:20:35.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 41,
               "Title": "ExcellProfessorReader.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\ExcellProfessorReader.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\ExcellProfessorReader.cshtml",
@@ -709,12 +931,11 @@
               "RelativeToolTip": "VehicleWeb\\Views\\Subject\\ExcellProfessorReader.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-18T15:49:21.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T15:49:21.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Index.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Index.cshtml",
@@ -726,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 42,
               "Title": "SetProfessors.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\SetProfessors.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\SetProfessors.cshtml",
@@ -738,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 44,
               "Title": "SubjectDTO.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\SubjectDTO.cs",
               "RelativeDocumentMoniker": "Domain\\DTO\\SubjectDTO.cs",
@@ -750,7 +971,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 45,
               "Title": "Professors.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Professors.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Professors.cshtml",
@@ -762,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 46,
               "Title": "AddProfessor.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\AddProfessor.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\AddProfessor.cshtml",
@@ -774,7 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 47,
               "Title": "20250413174100_checkData.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413174100_checkData.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413174100_checkData.cs",
@@ -786,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 48,
               "Title": "SubjectStudent.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\SubjectStudent.cs",
               "RelativeDocumentMoniker": "Domain\\SubjectStudent.cs",
@@ -798,43 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\ApplicationDbContext.cs",
-              "RelativeToolTip": "VehicleReposiotry\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAUwDIAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:04:54.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SubjectStudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
-              "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
-              "RelativeToolTip": "VehicleReposiotry\\Implementation\\SubjectStudentRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T13:58:39.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Subject.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Subject.cs",
-              "RelativeDocumentMoniker": "Domain\\Subject.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Subject.cs",
-              "RelativeToolTip": "Domain\\Subject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:34:27.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 49,
               "Title": "DeleteStudentSubject.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\DeleteStudentSubject.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\DeleteStudentSubject.cshtml",
@@ -846,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 50,
               "Title": "DeleteProfessorSubject.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\DeleteProfessorSubject.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\DeleteProfessorSubject.cshtml",
@@ -858,7 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "Proba.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\Proba.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Controllers\\Proba.cs",
@@ -870,19 +1055,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Program.cs",
-              "RelativeDocumentMoniker": "VehicleWeb\\Program.cs",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Program.cs",
-              "RelativeToolTip": "VehicleWeb\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwB8AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T15:07:05.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 83,
               "Title": "20250413131352_initnewbaseagain.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413131352_initnewbaseagain.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413131352_initnewbaseagain.cs",
@@ -894,7 +1067,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\appsettings.Development.json",
               "RelativeDocumentMoniker": "VehicleWeb\\appsettings.Development.json",
@@ -906,7 +1079,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 84,
               "Title": "20250413131212_initnewbase.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413131212_initnewbase.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413131212_initnewbase.cs",
@@ -918,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 52,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\appsettings.json",
               "RelativeDocumentMoniker": "VehicleWeb\\appsettings.json",
@@ -930,7 +1103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 85,
               "Title": "20250413130330_subjects.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413130330_subjects.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413130330_subjects.cs",
@@ -941,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 86,
               "Title": "20250413130502_subjects2.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413130502_subjects2.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413130502_subjects2.cs",
@@ -952,7 +1125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 87,
               "Title": "20250413130213_SUbjectSTudent33.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413130213_SUbjectSTudent33.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413130213_SUbjectSTudent33.cs",
@@ -963,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 88,
               "Title": "20250413125945_SUbjectSTudent3.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413125945_SUbjectSTudent3.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413125945_SUbjectSTudent3.cs",
@@ -974,7 +1147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 89,
               "Title": "20250413125619_SUbjectSTudent2.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413125619_SUbjectSTudent2.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413125619_SUbjectSTudent2.cs",
@@ -985,7 +1158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 90,
               "Title": "20250413122940_SUbjectSTudent.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250413122940_SUbjectSTudent.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250413122940_SUbjectSTudent.cs",
@@ -996,7 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 54,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Delete.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Delete.cshtml",
@@ -1008,7 +1181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 55,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -1020,7 +1193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 56,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Edit.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Edit.cshtml",
@@ -1032,7 +1205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 57,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Implementation\\Repository.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Implementation\\Repository.cs",
@@ -1044,7 +1217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 58,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Domain\\BaseEntity.cs",
@@ -1056,7 +1229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 59,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Interface\\IRepository.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Interface\\IRepository.cs",
@@ -1068,7 +1241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 60,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -1080,7 +1253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 63,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Shared\\_Layout.cshtml",
@@ -1092,7 +1265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 62,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -1104,7 +1277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 61,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Shared\\_LoginPartial.cshtml",
@@ -1116,7 +1289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 64,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Shared\\_Layout.cshtml.css",
@@ -1128,7 +1301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 91,
               "Title": "20250410193547_initNew.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250410193547_initNew.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250410193547_initNew.cs",
@@ -1139,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 65,
               "Title": "20250410192121_init200baack.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250410192121_init200baack.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250410192121_init200baack.cs",
@@ -1150,7 +1323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 66,
               "Title": "20250410191116_init200.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250410191116_init200.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250410191116_init200.cs",
@@ -1161,7 +1334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 67,
               "Title": "20250410190348_newinit.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250410190348_newinit.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250410190348_newinit.cs",
@@ -1172,7 +1345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 70,
               "Title": "buffer.d.ts",
               "DocumentMoniker": "C:\\Users\\Nikola\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\buffer.d.ts",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\buffer.d.ts",
@@ -1184,7 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 69,
               "Title": "assert.d.ts",
               "DocumentMoniker": "C:\\Users\\Nikola\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\assert.d.ts",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\assert.d.ts",
@@ -1196,7 +1369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 68,
               "Title": "cluster.d.ts",
               "DocumentMoniker": "C:\\Users\\Nikola\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\cluster.d.ts",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Microsoft\\TypeScript\\5.2\\node_modules\\@types\\node\\cluster.d.ts",
@@ -1208,7 +1381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 72,
               "Title": "UsersDTO.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\DTO\\UsersDTO.cs",
               "RelativeDocumentMoniker": "Domain\\DTO\\UsersDTO.cs",
@@ -1220,7 +1393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 71,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Subject\\Create.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Subject\\Create.cshtml",
@@ -1232,19 +1405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-23T17:22:18.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 73,
               "Title": "20250409191520_subjectRepository.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250409191520_subjectRepository.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250409191520_subjectRepository.cs",
@@ -1255,7 +1416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 74,
               "Title": "20250409181554_subject_and_user.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleReposiotry\\Migrations\\20250409181554_subject_and_user.cs",
               "RelativeDocumentMoniker": "VehicleReposiotry\\Migrations\\20250409181554_subject_and_user.cs",
@@ -1266,7 +1427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 76,
               "Title": "Students.js",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Students.js",
               "RelativeDocumentMoniker": "VehicleWeb\\wwwroot\\js\\Students.js",
@@ -1278,7 +1439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 75,
               "Title": "Professors.js",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\wwwroot\\js\\Professors.js",
               "RelativeDocumentMoniker": "VehicleWeb\\wwwroot\\js\\Professors.js",
@@ -1290,7 +1451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 77,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Controllers\\HomeController.cs",
@@ -1302,7 +1463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 78,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\Shared\\Error.cshtml",
@@ -1314,7 +1475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 79,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\_ViewStart.cshtml",
@@ -1326,7 +1487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 80,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Views\\_ViewImports.cshtml",
@@ -1338,7 +1499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 81,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "VehicleWeb\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
@@ -1350,7 +1511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 82,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Nikola\\Desktop\\public rep\\E-GradeBook_IKT\\E-GradeBook\\VehicleWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "VehicleWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",

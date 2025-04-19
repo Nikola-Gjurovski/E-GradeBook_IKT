@@ -22,6 +22,41 @@ namespace VehicleReposiotry.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Grades", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<Guid>("SubjectId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("finalGrade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("firsSemester")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("firstSemesterFinal")
+                        .HasColumnType("int");
+
+                    b.Property<string>("lastSemester")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("lastSemesterFinal")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.ToTable("Grades");
+                });
+
             modelBuilder.Entity("Domain.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -303,6 +338,17 @@ namespace VehicleReposiotry.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Grades", b =>
+                {
+                    b.HasOne("Domain.Identity.ApplicationUser", "Student")
+                        .WithMany("Grades")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Student");
+                });
+
             modelBuilder.Entity("Domain.SubjectProfessor", b =>
                 {
                     b.HasOne("Domain.Identity.ApplicationUser", "Professor")
@@ -395,6 +441,8 @@ namespace VehicleReposiotry.Migrations
             modelBuilder.Entity("Domain.Identity.ApplicationUser", b =>
                 {
                     b.Navigation("EnrolledSubjects");
+
+                    b.Navigation("Grades");
 
                     b.Navigation("TeachingSubjects");
                 });

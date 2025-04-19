@@ -1,0 +1,232 @@
+﻿@model Domain.Grades
+
+@{
+    ViewData["Title"] = "Student Grades";
+    Layout = "_Layout";
+}
+
+<div class="container grade-container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title mb-0">
+                <i class="fas fa-graduation-cap me-2"></i>Преглед на оценки
+            </h3>
+        </div>
+
+        <div class="card-body">
+            <!-- Student Information -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="info-item">
+                        <span class="info-label">Студент:</span>
+                        <span class="info-value">@Model.Student?.FirstName @Model.Student?.LastName</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grades Summary -->
+            <div class="grades-summary mb-4">
+                <div class="summary-card final-grade">
+                    <div class="summary-title">Крајна оценка</div>
+                    <div class="summary-value">@(Model.finalGrade?.ToString() ?? "-")</div>
+                    <div class="mt-2">
+                        <a class="btn btn-sm btn-success" asp-controller="Professor" asp-action="AddGrade"
+                           asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="3">
+                            <i class="fas fa-plus"></i> Додади
+                        </a>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">Крајна оценка од прво полугодие</div>
+                    <div class="summary-value">@(Model.firstSemesterFinal?.ToString() ?? "-")</div>
+                    <div class="mt-2">
+                        <a class="btn btn-sm btn-primary" asp-controller="Professor" asp-action="AddGrade"
+                           asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="4">
+                            <i class="fas fa-plus"></i> Додади
+                        </a>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">Крајна оценка од второ полугодие</div>
+                    <div class="summary-value">@(Model.lastSemesterFinal?.ToString() ?? "-")</div>
+                    <div class="mt-2">
+                        <a class="btn btn-sm btn-primary" asp-controller="Professor" asp-action="AddGrade"
+                           asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="5">
+                            <i class="fas fa-plus"></i> Додади
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semester Breakdown -->
+            <div class="row">
+                <!-- First Semester Grades -->
+                <div class="col-md-6">
+                    <div class="semester-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="semester-title mb-0">
+                                <i class="fas fa-snowflake me-2"></i>Оценки од прво полугодие
+                            </h5>
+                            <a class="btn btn-sm btn-outline-primary" asp-controller="Professor" asp-action="AddGrade"
+                               asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="1">
+                                <i class="fas fa-plus"></i> Додади оценка
+                            </a>
+                        </div>
+                        @if (Model.firsSemester?.Count > 0)
+                        {
+                            <ul class="grade-list">
+                                @foreach (var (grade, index) in Model.firsSemester.Select((g, i) => (g, i)))
+                                {
+                                    <li class="grade-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="grade-value">@grade</span>
+                                            <a class="btn btn-sm btn-outline-danger"
+                                               asp-controller="Professor"
+                                               asp-action="RemoveGrade"
+                                               asp-route-SubjectId="@Model.SubjectId"
+                                               asp-route-UserId="@Model.ApplicationUserId"
+                                               asp-route-Id=1
+                                               asp-route-GradeIndex="@index">
+                                                <i class="fas fa-trash"></i>Избриши
+                                            </a>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted">Не се внесени оценки</p>
+                        }
+                    </div>
+                </div>
+
+                <!-- Second Semester Grades -->
+                <div class="col-md-6">
+                    <div class="semester-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="semester-title mb-0">
+                                <i class="fas fa-sun me-2"></i>Оценки од второ полугодие
+                            </h5>
+                            <a class="btn btn-sm btn-outline-primary" asp-controller="Professor" asp-action="AddGrade"
+                               asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="2">
+                                <i class="fas fa-plus"></i> Додади оценка
+                            </a>
+                        </div>
+                        @if (Model.lastSemester?.Count > 0)
+                        {
+                            <ul class="grade-list">
+                                @foreach (var (grade, index) in Model.lastSemester.Select((g, i) => (g, i)))
+                                {
+                                    <li class="grade-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="grade-value">@grade</span>
+                                            <a class="btn btn-sm btn-outline-danger"
+                                               asp-controller="Professor"
+                                               asp-action="RemoveGrade"
+                                               asp-route-SubjectId="@Model.SubjectId"
+                                               asp-route-UserId="@Model.ApplicationUserId"
+                                               asp-route-Id =2
+                                              
+                                               asp-route-GradeIndex="@index">
+                                                <i class="fas fa-trash"></i>Избриши
+                                            </a>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted">Не се внесени оценки</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .grade-container {
+        max-width: 900px;
+    }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #555;
+        margin-right: 8px;
+    }
+
+    .info-value {
+        color: #333;
+    }
+
+    .grades-summary {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .summary-card {
+        flex: 1;
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        border-left: 4px solid #6c757d;
+    }
+
+        .summary-card.final-grade {
+            border-left-color: #28a745;
+            background: #f0fff4;
+        }
+
+    .summary-title {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 5px;
+    }
+
+    .summary-value {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .semester-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        height: 100%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .semester-title {
+        color: #495057;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .grade-list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .grade-item {
+        background: #e9ecef;
+        border-radius: 4px;
+        padding: 8px;
+    }
+
+    .grade-value {
+        font-weight: 600;
+    }
+</style>

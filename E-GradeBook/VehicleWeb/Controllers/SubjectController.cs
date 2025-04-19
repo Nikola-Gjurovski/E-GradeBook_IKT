@@ -211,6 +211,10 @@ namespace Web.Controllers
             {
                 TempData["SuccessMessage"] = "Овој ученик  е веќе поставен на овој предмет";
             }
+            else
+            {
+                _SubjectService.CreateGrades(model);
+            }
             return RedirectToAction("SubjectStudent", "Subject", new {
                 professorId = model.UserId,
                 subjectId = model.Id 
@@ -346,6 +350,7 @@ namespace Web.Controllers
                 foreach (var item in model)
                 {
                     bool flag = _SubjectService.PostStudent(item);
+                    _SubjectService.CreateGrades(item);
                 }
             }
 

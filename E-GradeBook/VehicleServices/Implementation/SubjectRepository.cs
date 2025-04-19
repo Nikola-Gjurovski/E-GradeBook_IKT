@@ -21,62 +21,22 @@ namespace Services.Implementation
         private readonly IUserRepository _userRepository;
         private readonly ISubjectProfessor _subjectProfessor;
         private readonly ISubjectStudent _subjectStudent;
-        public SubjectRepository(IUserRepository userRepository, ISubjectProfessor subjectProfessor, ISubjectInt subjectRepository, ISubjectStudent subjectStudent)
+        private readonly IGrades _grades;
+        public SubjectRepository(IUserRepository userRepository, ISubjectProfessor subjectProfessor, ISubjectInt subjectRepository, ISubjectStudent subjectStudent, IGrades grades)
         {
-            
+
             _userRepository = userRepository;
             _subjectProfessor = subjectProfessor;
             _subjectRepository = subjectRepository;
             _subjectStudent = subjectStudent;
+            _grades = grades;
         }
         public void CreateNewSubject(Subject p)
         {
              _subjectRepository.AddSubject(p);
         }
 
-        //public void DeleteSubject(Guid id)
-        //{
-        //    var r = _subjectRepository.GetSubjectById(id);
-        //    if (r.Professors != null)
-        //    {
-        //        foreach (var items in r.Professors.ToList()) // ToList() to avoid modification during iteration
-        //        {
-        //            this.DeleteStudentSubject(items.Id);
-        //        }
-        //    }
-        //    _subjectRepository.DeleteSubject(r);
-        //    //var subject = _subjectRepository.GetSubjectById(id);
-
-        //    //if (subject == null) return;
-
-        //    //// Load all SubjectProfessor entries for this subject
-        //    //var subjectProfessors = _subjectProfessor.GetAll()
-        //    //    .Where(sp => sp.SubjectId == id)
-        //    //    .ToList();
-
-        //    //foreach (var sp in subjectProfessors)
-        //    //{
-        //    //    // Remove SubjectProfessor from Professor's TeachingSubjects
-        //    //    var professor = _userRepository.Get(sp.ApplicationUserId);
-        //    //    if (professor != null && professor.TeachingSubjects != null)
-        //    //    {
-        //    //        professor.TeachingSubjects.Remove(sp);
-        //    //        _userRepository.Update(professor);
-        //    //    }
-
-        //    //    // Remove from subject's Professors list
-        //    //    if (subject.Professors != null)
-        //    //    {
-        //    //        subject.Professors.Remove(sp);
-        //    //    }
-
-        //    //    // Delete SubjectProfessor entity
-        //    //    _subjectProfessor.DeleteSubject(sp);
-        //    //}
-
-        //    //// Finally delete the subject itself
-        //    //_subjectRepository.DeleteSubject(subject);
-        //}
+       
         public void DeleteSubject(Guid id)
         {
             var subject = _subjectRepository.GetSubjectById(id);
@@ -220,8 +180,15 @@ namespace Services.Implementation
             _userRepository.Update(user);
             _subjectProfessor.Update(subject);
 
+            this.DeleteGrades(user,subject.SubjectId);
 
-
+        }
+        protected void DeleteGrades(ApplicationUser user,Guid SubjectId)
+        {
+            var model = _grades.Find(user.Id, SubjectId);
+            user.Grades.Remove(model);
+            _grades.DeleteGrades(model);
+            _userRepository.Update(user);
         }
 
         public void UpdateExistingSubject(Subject p)
@@ -245,39 +212,121 @@ namespace Services.Implementation
             
             return model;
         }
+        //public bool PostStudent(SubjectProfessorsDTO model)
+        //{
+        //    var user = _userRepository.Get(model.ProfessorId);
+        //    Grades gradesModel = new Grades();
+
+        //    if(_subjectStudent.GetSubjectStudent(model.ProfessorId,model.SubjectId)!=null)
+        //    {
+        //        return false;
+        //    }
+        //    SubjectStudent subjectProfessor = new SubjectStudent();
+        //    subjectProfessor.Id = Guid.NewGuid();
+        //    subjectProfessor.ApplicationUserId = model.ProfessorId;
+        //    var subjectP = _subjectProfessor.GetById(model.SubjectId);
+        //    subjectProfessor.Student = user;
+
+        //    if (subjectP.ProfessorStudents == null)
+        //        subjectP.ProfessorStudents = new List<SubjectStudent>();
+
+        //    subjectP.ProfessorStudents.Add(subjectProfessor);
+        //    subjectProfessor.SubjectProfessorId =subjectP.Id;
+        //    subjectProfessor.SubjectProfessor = subjectP;
+        //    if (user.EnrolledSubjects == null)
+        //        user.EnrolledSubjects = new List<SubjectStudent>();
+        //    gradesModel.Id = Guid.NewGuid();
+        //    gradesModel.SubjectId = subjectP.SubjectId;
+        //    gradesModel.ApplicationUserId = user.Id;
+        //    gradesModel.Student = user; 
+        //    user.EnrolledSubjects.Add(subjectProfessor);
+        //    if(user.Grades == null)
+        //    {
+        //        user.Grades = new List<Grades>();
+        //    }
+        //    user.Grades.Add(gradesModel);
+
+        //    _subjectStudent.AddSubjectStudent(subjectProfessor);
+
+        //    _userRepository.Update(user);
+        //    _subjectProfessor.Update(subjectP);
+
+
+        //    _grades.AddGrades(gradesModel);
+        //    return true;
+
+
+        //}
         public bool PostStudent(SubjectProfessorsDTO model)
         {
             var user = _userRepository.Get(model.ProfessorId);
-           
-            if(_subjectStudent.GetSubjectStudent(model.ProfessorId,model.SubjectId)!=null)
+            if (_subjectStudent.GetSubjectStudent(model.ProfessorId, model.SubjectId) != null)
             {
                 return false;
             }
-            SubjectStudent subjectProfessor = new SubjectStudent();
-            subjectProfessor.Id = Guid.NewGuid();
-            subjectProfessor.ApplicationUserId = model.ProfessorId;
+
             var subjectP = _subjectProfessor.GetById(model.SubjectId);
-            subjectProfessor.Student = user;
-           
-            if (subjectP.ProfessorStudents == null)
-                subjectP.ProfessorStudents = new List<SubjectStudent>();
-           
+
+            // Create and setup all entities
+            var subjectProfessor = new SubjectStudent
+            {
+                Id = Guid.NewGuid(),
+                ApplicationUserId = model.ProfessorId,
+                Student = user,
+                SubjectProfessorId = subjectP.Id,
+                SubjectProfessor = subjectP
+            };
+
+            //var gradesModel = new Grades
+            //{
+            //    Id = Guid.NewGuid(),
+            //    SubjectId = subjectP.SubjectId,
+            //    ApplicationUserId = user.Id,
+            //    Student = user
+            //};
+
+            // Setup collections if null
+            subjectP.ProfessorStudents ??= new List<SubjectStudent>();
+            user.EnrolledSubjects ??= new List<SubjectStudent>();
+            //user.Grades ??= new List<Grades>();
+
+            // Add relationships
             subjectP.ProfessorStudents.Add(subjectProfessor);
-
-           
-            subjectProfessor.SubjectProfessorId =subjectP.Id;
-            subjectProfessor.SubjectProfessor = subjectP;
-            if (user.EnrolledSubjects == null)
-                user.EnrolledSubjects = new List<SubjectStudent>();
             user.EnrolledSubjects.Add(subjectProfessor);
-            _subjectStudent.AddSubjectStudent(subjectProfessor);
+           // user.Grades.Add(gradesModel);
+
+            try
+            {
+                // Save everything in one operation
+                _subjectStudent.AddSubjectStudent(subjectProfessor);
+               // _grades.AddGrades(gradesModel);
+                _userRepository.Update(user);
+                _subjectProfessor.Update(subjectP);
+
+                return true;
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                // Handle concurrency conflict
+                return false;
+            }
+        }
+        public void CreateGrades(SubjectProfessorsDTO model)
+        {
+            var user = _userRepository.Get(model.ProfessorId);
+            var subjectP = _subjectProfessor.GetById(model.SubjectId);
+            var gradesModel = new Grades
+            {
+                Id = Guid.NewGuid(),
+                SubjectId = subjectP.SubjectId,
+                ApplicationUserId = user.Id,
+                Student = user
+            };
+            if (user.Grades == null)
+                user.Grades = new List<Grades>();
+            user.Grades.Add(gradesModel);
+            _grades.AddGrades(gradesModel);
             _userRepository.Update(user);
-            _subjectProfessor.Update(subjectP);
-           
-
-
-            return true;
-
 
         }
         public SubjectStudent GetStudentProfessor(Guid SubjectId)

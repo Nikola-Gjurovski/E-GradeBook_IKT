@@ -66,8 +66,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvYmFcTm90QWN0aXZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/AddGrade.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEFkZEdyYWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Grades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEdyYWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Index.cshtml]

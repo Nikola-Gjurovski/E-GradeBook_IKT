@@ -1,0 +1,123 @@
+﻿@model Domain.DTO.GradesDTO
+
+@{
+    ViewData["Title"] = "Додади оценка";
+    Layout = "_Layout";
+}
+
+<div class="container grade-form-container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title mb-0">
+                <i class="fas fa-plus-circle me-2"></i>Додади нова оценка
+            </h3>
+        </div>
+
+        <div class="card-body">
+            <form method="post" asp-action="AddGrade" class="grade-form">
+                <input type="hidden" asp-for="SubjectId" />
+                <input type="hidden" asp-for="ApplicationUserId" />
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-4">
+                    <h5 class="form-section-title mb-3">
+                        <i class="fas fa-edit me-2"></i>Избери оценка
+                    </h5>
+
+                    <div class="grade-options btn-group-vertical w-100" role="group">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <button type="button" class="grade-option btn btn-outline-primary text-left" data-grade="@i">
+                                <span class="grade-number">@i</span>
+                                <span class="grade-description">
+                                    @(i == 1 ? "Незадоволувачки" :
+                                        i == 2 ? "Доволен" :
+                                        i == 3 ? "Добар" :
+                                        i == 4 ? "Многу добар" : "Одличен")
+                                </span>
+                                <i class="fas fa-check float-end"></i>
+                            </button>
+                        }
+                    </div>
+                    <input type="hidden" asp-for="Grade" id="selectedGrade" />
+                    <span asp-validation-for="Grade" class="text-danger"></span>
+                </div>
+
+                <div class="form-group d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Назад кон листата
+                    </a>
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save me-2"></i>Зачувај оценка
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function() {
+            $('.grade-option').click(function() {
+                // Remove active class from all buttons
+                $('.grade-option').removeClass('active btn-primary').addClass('btn-outline-primary');
+                // Add active class to clicked button
+                $(this).removeClass('btn-outline-primary').addClass('active btn-primary');
+                // Set the hidden input value
+                $('#selectedGrade').val($(this).data('grade'));
+            });
+        });
+    </script>
+}
+
+<style>
+    .grade-form-container {
+        max-width: 600px;
+    }
+
+    .form-section-title {
+        color: #495057;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .grade-options {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .grade-option {
+        text-align: left;
+        padding: 12px 20px;
+        border-radius: 0;
+        transition: all 0.3s ease;
+    }
+
+        .grade-option:hover {
+            background-color: #e9ecef;
+        }
+
+        .grade-option.active .fa-check {
+            opacity: 1;
+        }
+
+        .grade-option .fa-check {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+    .grade-number {
+        font-weight: bold;
+        font-size: 1.2rem;
+        min-width: 30px;
+        display: inline-block;
+    }
+
+    .grade-description {
+        margin-left: 15px;
+    }
+</style>

@@ -17,5 +17,6 @@ namespace Domain.Identity
 
         public ICollection<SubjectProfessor> ?TeachingSubjects { get; set; }
         public ICollection<SubjectStudent>? EnrolledSubjects { get; set; }
+        public ICollection<Grades>? Grades { get; set; }
     }
 }

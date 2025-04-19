@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Reposiotry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2aed52a785a2dd610bacd35424f09a120adc27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1653a25cb032bff0c381914a79e5ab929998104")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reposiotry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Reposiotry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

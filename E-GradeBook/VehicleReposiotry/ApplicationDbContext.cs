@@ -19,6 +19,7 @@ namespace VehicleReposiotry
         public virtual DbSet<SubjectProfessor> SubjectProfessors { get; set; }
 
         public virtual DbSet<SubjectStudent> SubjectStudents { get; set; }
+        public virtual DbSet<Grades> Grades { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
