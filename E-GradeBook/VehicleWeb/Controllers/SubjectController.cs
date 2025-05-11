@@ -44,7 +44,7 @@ namespace Web.Controllers
         public async Task<IActionResult> SetProfessors(UsersDTO usersDto)
         {
             roles.postProfessor(usersDto.Id);
-            TempData["SuccessMessage"] = "Корисникот е додаден како професор";
+            TempData["SuccessMessage"] = "User has been added as a professor";
             return RedirectToAction("SetProfessors");
         }
         public async Task<IActionResult> Professors()
@@ -57,7 +57,7 @@ namespace Web.Controllers
         public async Task<IActionResult> Professors(UsersDTO usersDto)
         {
             roles.deleteProfessor(usersDto.Id);
-            TempData["RemoveMessage"] = "Корисникот ги нема повеќе привилегиите на професор";
+            TempData["RemoveMessage"] = "The user no longer has professor privileges.";
             return RedirectToAction("Professors");
         }
         // GET: Subjects/Details/5
@@ -170,6 +170,28 @@ namespace Web.Controllers
             var model = _SubjectService.GetProfessor(Id);
             return View(model);
         }
+        public IActionResult UpdateProfessor(Guid Id,string professorId)
+        {
+
+
+
+
+            var model = _SubjectService.GetProfessor2(Id,professorId);
+            
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult UpdateProfessor(SubjectProfessorsDTO model)
+        {
+
+
+            bool flag = _SubjectService.UpdateProfessor(model);
+            if (!flag)
+            {
+                TempData["SuccessMessage"] = "This professor is already assigned to this course.";
+            }
+            return RedirectToAction("Details", "Subject", new { id = model.SubjectId });
+        }
 
         public IActionResult AddStudent(Guid Id)
         {
@@ -179,6 +201,19 @@ namespace Web.Controllers
 
             var model = _SubjectService.GetStudent(Id);
             return View(model);
+        }
+        public IActionResult  ProfessorSubjectDetails (string userId)
+        {
+            var student = roles.getWantedUser(userId);
+            if (userId == null)
+            {
+                return RedirectToPage("/Account/Login", new { area = "Identity" });
+            }
+            if (roles.check(userId))
+            {
+                return View(student);
+            }
+            return RedirectToAction("NotActive", "Proba");
         }
 
         public IActionResult SubjectStudent(string professorId, Guid subjectId)
@@ -198,7 +233,7 @@ namespace Web.Controllers
             bool flag =_SubjectService.PostProfessor(model);
             if (!flag)
             {
-                TempData["SuccessMessage"] = "Овој професор е веќе поставен на овој предмет";
+                TempData["SuccessMessage"] = "This professor is already assigned to this course.";
             }
             return RedirectToAction("Details", "Subject", new { id = model.SubjectId });
         }
@@ -209,7 +244,7 @@ namespace Web.Controllers
             bool flag = _SubjectService.PostStudent(model);
             if (!flag)
             {
-                TempData["SuccessMessage"] = "Овој ученик  е веќе поставен на овој предмет";
+                TempData["SuccessMessage"] = "This student is already assigned to this course.";
             }
             else
             {
@@ -289,7 +324,7 @@ namespace Web.Controllers
             return View(model);
         }
 
-       
+
         public IActionResult ImportProfessors(IFormFile file, Guid SubjectId)
         {
             if (file == null || file.Length == 0)
@@ -297,8 +332,15 @@ namespace Web.Controllers
 
             using (var stream = file.OpenReadStream())
             {
-                List<SubjectProfessorsDTO> model = getAllUsersFromStream(stream, SubjectId);
-                foreach (var item in model)
+                var (validProfessors, invalidMessages) = getAllProfessorsFromStream(stream, SubjectId);
+
+                if (invalidMessages.Any())
+                {
+                    TempData["ErrorProfessor"] = string.Join(" ", invalidMessages);
+                    return RedirectToAction("Details", "Subject", new { id = SubjectId });
+                }
+
+                foreach (var item in validProfessors)
                 {
                     bool flag = _SubjectService.PostProfessor(item);
                 }
@@ -307,50 +349,122 @@ namespace Web.Controllers
             return RedirectToAction("Details", "Subject", new { id = SubjectId });
         }
 
-
-        
-        private List<SubjectProfessorsDTO> getAllUsersFromStream(Stream stream, Guid SubjectId)
+        private (List<SubjectProfessorsDTO> validProfessors, List<string> invalidMessages) getAllProfessorsFromStream(Stream stream, Guid SubjectId)
         {
-            List<SubjectProfessorsDTO> users = new List<SubjectProfessorsDTO>();
+            List<SubjectProfessorsDTO> validUsers = new List<SubjectProfessorsDTO>();
+            List<string> invalidUsers = new List<string>();
 
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
             using (var reader = ExcelReaderFactory.CreateReader(stream))
             {
+                if (reader.FieldCount != 1)
+                {
+                    invalidUsers.Add($"The Excel document must contain exactly 1 column. Found: {reader.FieldCount}.");
+                    return (validUsers, invalidUsers);
+                }
+
+                HashSet<string> processedUsernames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
                 while (reader.Read())
                 {
-                    if (roles.find(reader.GetValue(0)?.ToString()) != null && roles.find(reader.GetValue(0)?.ToString()).IsProfessor ==true)
+                    var username = reader.GetValue(0)?.ToString();
+
+                    if (string.IsNullOrWhiteSpace(username))
                     {
-                        users.Add(new SubjectProfessorsDTO
-                        {
-                      
-                        ProfessorId = roles.find(reader.GetValue(0)?.ToString()).Id,
+                        invalidUsers.Add("An empty row was found in the Excel document.");
+                        continue;
+                    }
+
+                    if (processedUsernames.Contains(username))
+                    {
+                        invalidUsers.Add($"Duplicate username \"{username}\" found.");
+                        continue;
+                    }
+
+                    var user = roles.find(username);
+                    if (user == null)
+                    {
+                        invalidUsers.Add($"The user \"{username}\" does not exist.");
+                        continue;
+                    }
+
+                    if (!(bool)user.IsProfessor)
+                    {
+                        invalidUsers.Add($"The user \"{username}\" is not a professor.");
+                        continue;
+                    }
+
+                    processedUsernames.Add(username);
+
+                    validUsers.Add(new SubjectProfessorsDTO
+                    {
+                        ProfessorId = user.Id,
                         SubjectId = SubjectId
                     });
                 }
-                }
             }
 
-            return users;
+            if (!validUsers.Any())
+            {
+                invalidUsers.Add("No professors were eligible for import.");
+            }
+
+            return (validUsers, invalidUsers);
         }
+
         public IActionResult ExcellStudentReader(Guid Id)
         {
 
             var model = _SubjectService.GetStudent(Id);
             return View(model);
         }
-        public IActionResult ImportStudents(IFormFile file, Guid SubjectId, Guid Id,string ProfessorId,string UserId)
+        //public IActionResult ImportStudents(IFormFile file, Guid SubjectId, Guid Id,string ProfessorId,string UserId)
+        //{
+        //    if (file == null || file.Length == 0)
+        //        return BadRequest("No file uploaded.");
+
+        //    using (var stream = file.OpenReadStream())
+        //    {
+        //        List<SubjectProfessorsDTO> model = getAllStudentFromStream(stream, SubjectId);
+        //        foreach (var item in model)
+        //        {
+        //            bool flag = _SubjectService.PostStudent(item);
+        //            _SubjectService.CreateGrades(item);
+        //        }
+        //    }
+
+        //    return RedirectToAction("SubjectStudent", "Subject", new
+        //    {
+        //        professorId = UserId,
+        //        subjectId = Id
+        //    });
+        //}
+        public IActionResult ImportStudents(IFormFile file, Guid SubjectId, Guid Id, string ProfessorId, string UserId)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("No file uploaded.");
+                return BadRequest("No file uploaded."); 
 
             using (var stream = file.OpenReadStream())
             {
-                List<SubjectProfessorsDTO> model = getAllStudentFromStream(stream, SubjectId);
-                foreach (var item in model)
+                var (validStudents, invalidMessages) = getAllStudentFromStream(stream, SubjectId);
+
+                if (invalidMessages.Any())
+                {
+                    TempData["ErrorStudent"] = string.Join(" ", invalidMessages);
+                    return RedirectToAction("SubjectStudent", "Subject", new
+                    {
+                        professorId = UserId,
+                        subjectId = Id
+                    });
+                }
+
+                foreach (var item in validStudents)
                 {
                     bool flag = _SubjectService.PostStudent(item);
-                    _SubjectService.CreateGrades(item);
+                  
+                        _SubjectService.CreateGrades(item);
+                    
                 }
             }
 
@@ -360,30 +474,85 @@ namespace Web.Controllers
                 subjectId = Id
             });
         }
-        private List<SubjectProfessorsDTO> getAllStudentFromStream(Stream stream, Guid SubjectId)
+        private (List<SubjectProfessorsDTO> validStudents, List<string> invalidMessages) getAllStudentFromStream(Stream stream, Guid SubjectId)
         {
-            List<SubjectProfessorsDTO> users = new List<SubjectProfessorsDTO>();
+            List<SubjectProfessorsDTO> validUsers = new List<SubjectProfessorsDTO>();
+            List<string> invalidUsers = new List<string>();
 
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
             using (var reader = ExcelReaderFactory.CreateReader(stream))
             {
+                if (reader.FieldCount != 1)
+                {
+                    invalidUsers.Add($"The Excel document must contain exactly 1 column. Found: {reader.FieldCount}.");
+                    return (validUsers, invalidUsers);
+                }
+
                 while (reader.Read())
                 {
-                    if (roles.find(reader.GetValue(0)?.ToString()) != null && roles.find(reader.GetValue(0)?.ToString()).IsProfessor == false)
-                    {
-                        users.Add(new SubjectProfessorsDTO
-                        {
+                    var username = reader.GetValue(0)?.ToString();
 
-                            ProfessorId = roles.find(reader.GetValue(0)?.ToString()).Id,
-                            SubjectId = SubjectId
-                        });
+                    if (string.IsNullOrWhiteSpace(username))
+                    {
+                        invalidUsers.Add("An empty row was found in the Excel document.");
+                        continue;
                     }
+
+                    var user = roles.find(username);
+                    if (user == null)
+                    {
+                        invalidUsers.Add($"The user \"{username}\" do not exist.");
+                        continue;
+                    }
+
+                    if ((bool)user.IsProfessor)
+                    {
+                        invalidUsers.Add($"The user \"{username}\" is a professor, not a student.");
+                        continue;
+                    }
+
+                    validUsers.Add(new SubjectProfessorsDTO
+                    {
+                        ProfessorId = user.Id,
+                        SubjectId = SubjectId
+                    });
                 }
             }
 
-            return users;
+            if (!validUsers.Any())
+            {
+                invalidUsers.Add("No students were eligible for import.");
+            }
+
+            return (validUsers, invalidUsers);
         }
+
+
+        //private List<SubjectProfessorsDTO> getAllStudentFromStream(Stream stream, Guid SubjectId)
+        //{
+        //    List<SubjectProfessorsDTO> users = new List<SubjectProfessorsDTO>();
+
+        //    System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+        //    using (var reader = ExcelReaderFactory.CreateReader(stream))
+        //    {
+        //        while (reader.Read())
+        //        {
+        //            if (roles.find(reader.GetValue(0)?.ToString()) != null && roles.find(reader.GetValue(0)?.ToString()).IsProfessor == false)
+        //            {
+        //                users.Add(new SubjectProfessorsDTO
+        //                {
+
+        //                    ProfessorId = roles.find(reader.GetValue(0)?.ToString()).Id,
+        //                    SubjectId = SubjectId
+        //                });
+        //            }
+        //        }
+        //    }
+
+        //    return users;
+        //}
 
         #region API CALLS
         [HttpGet]

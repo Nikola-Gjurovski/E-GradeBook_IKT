@@ -3,13 +3,19 @@
 @{
     ViewData["Title"] = "Student Grades";
     Layout = "_Layout";
+    string Professorid = ViewBag.ProfessorId as string;
 }
+
+
+<a class="btn btn-info" asp-controller="Professor" asp-action="Details" asp-route-SubjectId="@Model.SubjectId"
+   asp-route-ProfessorId="@Professorid">
+    Back to List </a>
 
 <div class="container grade-container mt-4">
     <div class="card shadow-sm">
         <div class="card-header bg-primary text-white">
             <h3 class="card-title mb-0">
-                <i class="fas fa-graduation-cap me-2"></i>Преглед на оценки
+                <i class="fas fa-graduation-cap me-2"></i>Student Grades Overview
             </h3>
         </div>
 
@@ -18,7 +24,7 @@
             <div class="row mb-4">
                 <div class="col-md-6">
                     <div class="info-item">
-                        <span class="info-label">Студент:</span>
+                        <span class="info-label">Student:</span>
                         <span class="info-value">@Model.Student?.FirstName @Model.Student?.LastName</span>
                     </div>
                 </div>
@@ -27,32 +33,32 @@
             <!-- Grades Summary -->
             <div class="grades-summary mb-4">
                 <div class="summary-card final-grade">
-                    <div class="summary-title">Крајна оценка</div>
-                    <div class="summary-value">@(Model.finalGrade?.ToString() ?? "-")</div>
+                    <div class="summary-title">Final Grade</div>
+                    <div class="summary-value">@((Model.finalGrade.HasValue && Model.finalGrade.Value != 0) ? Model.finalGrade.Value.ToString() : "-")</div>
                     <div class="mt-2">
                         <a class="btn btn-sm btn-success" asp-controller="Professor" asp-action="AddGrade"
                            asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="3">
-                            <i class="fas fa-plus"></i> Додади
+                            <i class="fas fa-plus"></i> Add
                         </a>
                     </div>
                 </div>
                 <div class="summary-card">
-                    <div class="summary-title">Крајна оценка од прво полугодие</div>
-                    <div class="summary-value">@(Model.firstSemesterFinal?.ToString() ?? "-")</div>
+                    <div class="summary-title">First Semester Final Grade</div>
+                    <div class="summary-value">@((Model.firstSemesterFinal.HasValue && Model.firstSemesterFinal.Value != 0) ? Model.firstSemesterFinal.Value.ToString() : "-")</div>
                     <div class="mt-2">
                         <a class="btn btn-sm btn-primary" asp-controller="Professor" asp-action="AddGrade"
                            asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="4">
-                            <i class="fas fa-plus"></i> Додади
+                            <i class="fas fa-plus"></i> Add
                         </a>
                     </div>
                 </div>
                 <div class="summary-card">
-                    <div class="summary-title">Крајна оценка од второ полугодие</div>
-                    <div class="summary-value">@(Model.lastSemesterFinal?.ToString() ?? "-")</div>
+                    <div class="summary-title">Second Semester Final Grade</div>
+                    <div class="summary-value">@((Model.lastSemesterFinal.HasValue && Model.lastSemesterFinal.Value != 0) ? Model.lastSemesterFinal.Value.ToString() : "-")</div>
                     <div class="mt-2">
                         <a class="btn btn-sm btn-primary" asp-controller="Professor" asp-action="AddGrade"
                            asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="5">
-                            <i class="fas fa-plus"></i> Додади
+                            <i class="fas fa-plus"></i> Add
                         </a>
                     </div>
                 </div>
@@ -65,11 +71,11 @@
                     <div class="semester-card">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h5 class="semester-title mb-0">
-                                <i class="fas fa-snowflake me-2"></i>Оценки од прво полугодие
+                                <i class="fas fa-snowflake me-2"></i>First Semester Grades
                             </h5>
                             <a class="btn btn-sm btn-outline-primary" asp-controller="Professor" asp-action="AddGrade"
                                asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="1">
-                                <i class="fas fa-plus"></i> Додади оценка
+                                <i class="fas fa-plus"></i> Add Grade
                             </a>
                         </div>
                         @if (Model.firsSemester?.Count > 0)
@@ -79,15 +85,15 @@
                                 {
                                     <li class="grade-item">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="grade-value">@grade</span>
+                                            <span class="grade-value">@((grade != 0) ? grade.ToString() : "-")</span>
                                             <a class="btn btn-sm btn-outline-danger"
                                                asp-controller="Professor"
                                                asp-action="RemoveGrade"
                                                asp-route-SubjectId="@Model.SubjectId"
                                                asp-route-UserId="@Model.ApplicationUserId"
-                                               asp-route-Id=1
+                                               asp-route-Id="1"
                                                asp-route-GradeIndex="@index">
-                                                <i class="fas fa-trash"></i>Избриши
+                                                <i class="fas fa-trash"></i> Delete
                                             </a>
                                         </div>
                                     </li>
@@ -96,7 +102,7 @@
                         }
                         else
                         {
-                            <p class="text-muted">Не се внесени оценки</p>
+                            <p class="text-muted">No grades entered</p>
                         }
                     </div>
                 </div>
@@ -106,11 +112,11 @@
                     <div class="semester-card">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h5 class="semester-title mb-0">
-                                <i class="fas fa-sun me-2"></i>Оценки од второ полугодие
+                                <i class="fas fa-sun me-2"></i>Second Semester Grades
                             </h5>
                             <a class="btn btn-sm btn-outline-primary" asp-controller="Professor" asp-action="AddGrade"
                                asp-route-SubjectId="@Model.SubjectId" asp-route-UserId="@Model.ApplicationUserId" asp-route-Id="2">
-                                <i class="fas fa-plus"></i> Додади оценка
+                                <i class="fas fa-plus"></i> Add Grade
                             </a>
                         </div>
                         @if (Model.lastSemester?.Count > 0)
@@ -120,16 +126,15 @@
                                 {
                                     <li class="grade-item">
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <span class="grade-value">@grade</span>
+                                            <span class="grade-value">@((grade != 0) ? grade.ToString() : "-")</span>
                                             <a class="btn btn-sm btn-outline-danger"
                                                asp-controller="Professor"
                                                asp-action="RemoveGrade"
                                                asp-route-SubjectId="@Model.SubjectId"
                                                asp-route-UserId="@Model.ApplicationUserId"
-                                               asp-route-Id =2
-                                              
+                                               asp-route-Id="2"
                                                asp-route-GradeIndex="@index">
-                                                <i class="fas fa-trash"></i>Избриши
+                                                <i class="fas fa-trash"></i> Delete
                                             </a>
                                         </div>
                                     </li>
@@ -138,7 +143,7 @@
                         }
                         else
                         {
-                            <p class="text-muted">Не се внесени оценки</p>
+                            <p class="text-muted">No grades entered</p>
                         }
                     </div>
                 </div>
@@ -146,7 +151,6 @@
         </div>
     </div>
 </div>
-
 <style>
     .grade-container {
         max-width: 900px;

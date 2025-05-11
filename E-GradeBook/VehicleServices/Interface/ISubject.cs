@@ -25,5 +25,7 @@ namespace Services.Interface
         public SubjectStudent GetStudentProfessor( Guid SubjectId);
         public void DeleteStudentSubject(Guid Id);
         public void CreateGrades(SubjectProfessorsDTO professor);
+        public bool UpdateProfessor(SubjectProfessorsDTO model);
+        public SubjectProfessorsDTO GetProfessor2(Guid id, string UserId);
     }
 }

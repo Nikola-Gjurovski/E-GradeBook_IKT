@@ -10,7 +10,12 @@
         @successMessage
     </div>
 }
-
+@if (TempData["ErrorProfessor"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorProfessor"]
+    </div>
+}
 <h1>Details</h1>
 
 <div>
@@ -40,7 +45,7 @@
 </div>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    
     <a class="btn btn-success" asp-action="AddProfessor" asp-route-Id="@Model?.Id">Додади професор</a> |
     <a class="btn btn-success mb-3" asp-action="ExcellProfessorReader" asp-route-SubjectId="@Model?.Id">Импортирај професори</a>
     <a asp-action="Index">Back to List</a>
@@ -54,6 +59,7 @@
             <th>
                 Last Name
             </th>
+            <th> Email </th>
           
         </tr>
     </thead>
@@ -70,17 +76,22 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Professor.LastName)
                 </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Professor.Email)
+                </td>
                
                 <td>
 
                     <a asp-action="SubjectStudent" asp-route-subjectId="@Model.Id"
-                       asp-route-professorId="@item.ApplicationUserId">Ученици</a> |
+                       asp-route-professorId="@item.ApplicationUserId">Students</a> |
+                    <a asp-action="UpdateProfessor" asp-route-Id="@Model.Id"
+                       asp-route-professorId="@item.ApplicationUserId">Update</a>|
                     <a asp-action="DeleteProfessorSubject" asp-route-subjectId="@Model.Id"
                        asp-route-professorId="@item.ApplicationUserId">Delete</a>
                 </td>
             </tr>
         }
-        }
+        
       
     </tbody>
 </table>

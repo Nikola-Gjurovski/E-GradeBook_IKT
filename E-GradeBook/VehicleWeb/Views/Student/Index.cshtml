@@ -1,0 +1,69 @@
+﻿@model Domain.Identity.ApplicationUser
+
+@{
+    ViewData["Title"] = "Subjects the Student is Enrolled In";
+}
+@{
+    var finalGrades = ViewBag.FinalGrades as Dictionary<Guid, int?>;
+    double globalAverage = ViewBag.GlobalAverage != null ? (double)ViewBag.GlobalAverage : 0;
+}
+<h5>Вашиот просек: <strong>@(globalAverage == 0 ? "-" : globalAverage.ToString("0.00"))</strong></h5>
+<h2>Вашите предмети на кои сте запишани</h2>
+
+@if (Model.EnrolledSubjects != null && Model.EnrolledSubjects.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Име на предметот</th>
+                <th>Опис</th>
+                <th>Година на која се изучува</th>
+                <th>Професор</th>
+                <th>Крајна оценка</th>
+                <th>Детали</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subjectStudent in Model.EnrolledSubjects)
+            {
+                var subjectProfessor = subjectStudent.SubjectProfessor;
+                var subject = subjectProfessor?.Subject;
+                var professor = subjectProfessor?.Professor;
+
+                <tr>
+                    <td>@subject?.Name</td>
+                    <td>@subject?.Description</td>
+                    <td>@subject?.YearOfStudy</td>
+                    <td>@(professor != null ? $"{professor.FirstName} {professor.LastName}" : "N/A")</td>
+                    <td>
+                        @(subjectProfessor != null && finalGrades != null && finalGrades.ContainsKey(subjectProfessor.SubjectId)
+                            ? finalGrades[subjectProfessor.SubjectId]?.ToString() ?? "-"
+                            : "-")
+                    </td>
+                    <td>
+                        @if (subjectProfessor != null)
+                        {
+                           
+                            <a class="btn btn-sm btn-info"
+                               asp-controller="Student"
+                               asp-action="Grades"
+                               asp-route-SubjectId="@subjectProfessor.SubjectId"
+                               asp-route-StudentId="@Model.Id">
+                                <i class="fas fa-list-check me-1"></i> Сите оценки
+                            </a>
+                        }
+                        else
+                        {
+                            <span>Нема детали</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Не сте запишани на ниту еден предмет.</p>
+}

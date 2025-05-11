@@ -1,45 +1,131 @@
 ﻿@model Domain.SubjectProfessor
 
-
-
-<h3>@Model.Professor.FirstName - @Model.Subject.Name</h3>
-
-<a asp-action="Index">Врати се назад</a>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                First Name
-            </th>
-            <th>
-                Last Name
-            </th>
-
-        </tr>
-    </thead>
-    <tbody>
-
-        @for (int i = 0; i < Model.ProfessorStudents.Count(); i++)
-        {
-            var item = Model.ProfessorStudents.ElementAt(i);
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Student.FirstName)
-
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Student.LastName)
-                </td>
-                <td>
-                <a class="btn btn-info" asp-controller="Professor" asp-action="Grades" asp-route-SubjectId="@Model.SubjectId"
-                   asp-route-StudentId="@item.Student.Id">
-                    Оценки
+@{
+    ViewData["Title"] = "Student Grades Management";
+    Layout = "_Layout";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>@TempData["ErrorMessage"]</strong>
+        <br />
+        @TempData["InvalidUsers"]
+    </div>
+}
+<div class="container professor-grade-container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="card-title mb-0">
+                    <i class="fas fa-chalkboard-teacher me-2"></i>@Model.Professor.FirstName - @Model.Subject.Name
+                </h3>
+                <a asp-action="Index" class="btn btn-light btn-sm">
+                    <i class="fas fa-arrow-left me-1"></i> Назад
                 </a>
-                </td>
-            </tr>
-        }
-        }
+            </div>
+        </div>
 
-    </tbody>
-</table>
+        <!-- Grade Action Buttons (For All Students) -->
+        <div class="card-body border-bottom">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <a class="btn btn-primary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=1 asp-route-UserId="@Model.ApplicationUserId">
+                    
+                    <i class="fas fa-file-import me-1"></i> Импорт оценки (Прво полугодие)
+                </a>
+
+                <a class="btn btn-secondary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=4 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-plus-circle me-1"></i> Додади крајна оценка (Прво)
+                </a>
+
+                <a class="btn btn-primary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=2 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-file-import me-1"></i> Импорт оценки (Второ полугодие)
+                </a>
+
+                <a class="btn btn-secondary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=5 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-plus-circle me-1"></i> Додади крајна оценка (Второ)
+                </a>
+
+                <a class="btn btn-success"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=3 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-star me-1"></i> Додади конечна оценка
+                </a>
+                <a class="btn btn-success"  asp-action="ExportGradesReport" asp-route-SubjectId="@Model.SubjectId"
+                   asp-route-ProfessorId="@Model.ApplicationUserId">
+                <i class="fas fa-star me-1"></i> Експортирај оценки</a>
+            </div>
+        </div>
+
+        <!-- Students Table -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Име</th>
+                            <th>Презиме</th>
+                            <th>Оценки</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ProfessorStudents)
+                        {
+                            <tr>
+                                <td>@item.Student.FirstName</td>
+                                <td>@item.Student.LastName</td>
+                                <td>
+                                    <a class="btn btn-sm btn-info"
+                                       asp-controller="Professor"
+                                       asp-action="Grades"
+                                       asp-route-SubjectId="@Model.SubjectId"
+                                       asp-route-StudentId="@item.Student.Id"
+                                       asp-route-Professorid ="@Model.ApplicationUserId"
+                                    >
+                                        <i class="fas fa-list-check me-1"></i> Детали
+                                    </a>
+                                </td>
+                                
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .professor-grade-container {
+        max-width: 1400px;
+    }
+
+    .table th {
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+    .grade-buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+</style>

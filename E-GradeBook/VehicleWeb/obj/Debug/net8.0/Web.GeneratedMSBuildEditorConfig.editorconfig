@@ -26,12 +26,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Nikola\Desktop\public rep\E-GradeBook_IKT\E-GradeBook\VehicleWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
@@ -74,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/ExcellGradeReader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEV4Y2VsbEdyYWRlUmVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Professor/Grades.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEdyYWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +112,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Student/Grades.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxHcmFkZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/AddProfessor.cshtml]
@@ -142,12 +170,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxQcm9mZXNzb3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/ProfessorSubjectDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxQcm9mZXNzb3JTdWJqZWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/SetProfessors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxTZXRQcm9mZXNzb3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/SubjectStudent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxTdWJqZWN0U3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/Subject/UpdateProfessor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViamVjdFxVcGRhdGVQcm9mZXNzb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nikola/Desktop/public rep/E-GradeBook_IKT/E-GradeBook/VehicleWeb/Views/_ViewImports.cshtml]

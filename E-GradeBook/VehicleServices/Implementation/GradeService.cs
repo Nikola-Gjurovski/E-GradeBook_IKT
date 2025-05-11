@@ -63,41 +63,44 @@ namespace Services.Implementation
         public void  PostGrade(GradesDTO model)
         {
             var grades = _grades.Find(model.ApplicationUserId, model.SubjectId);
-            if(model.Id == 1)
+            if (grades != null)
             {
-                if(grades.firsSemester == null)
+                if (model.Id == 1)
                 {
-                    grades.firsSemester = new List<int>();
+                    if (grades.firsSemester == null)
+                    {
+                        grades.firsSemester = new List<int>();
+                    }
+                    grades.firsSemester.Add(model.Grade);
                 }
-                grades.firsSemester.Add(model.Grade);
-            }
-            else if(model.Id == 2)
-            {
-                if (grades.lastSemester == null)
+                else if (model.Id == 2)
                 {
-                    grades.lastSemester = new List<int>();
+                    if (grades.lastSemester == null)
+                    {
+                        grades.lastSemester = new List<int>();
+                    }
+                    grades.lastSemester.Add(model.Grade);
                 }
-                grades.lastSemester.Add(model.Grade);
+                else if (model.Id == 3)
+                {
+                    if (grades.finalGrade == null)
+                        grades.finalGrade = 0;
+                    grades.finalGrade = model.Grade;
+                }
+                else if (model.Id == 4)
+                {
+                    if (grades.firstSemesterFinal == null)
+                        grades.firstSemesterFinal = 0;
+                    grades.firstSemesterFinal = model.Grade;
+                }
+                else if (model.Id == 5)
+                {
+                    if (grades.lastSemesterFinal == null)
+                        grades.lastSemesterFinal = 0;
+                    grades.lastSemesterFinal = model.Grade;
+                }
+                _grades.UpdateGrades(grades);
             }
-            else if(model.Id == 3) 
-            {
-                if (grades.finalGrade == null)
-                    grades.finalGrade = 0;
-                grades.finalGrade = model.Grade;
-            }
-            else if(model.Id == 4)
-            {
-                if (grades.firstSemesterFinal == null)
-                    grades.firstSemesterFinal =  0;
-                grades.firstSemesterFinal = model.Grade;
-            }
-            else if (model.Id == 5)
-            {
-                if (grades.lastSemesterFinal == null)
-                    grades.lastSemesterFinal = 0;
-                grades.lastSemesterFinal = model.Grade;
-            }
-            _grades.UpdateGrades(grades);
         }
         public void DeleteGrade(Guid SubjectId,string UserId,int Id,int GradeId)
         {

@@ -29,9 +29,13 @@
 {
     <a class="btn btn-success" asp-area="" asp-controller="Subject" asp-action="Index">Admin Panel</a>
 }
-@if (Model.User != null && Model.User.IsProfessor == true)
+@if (Model.User != null && Model.User.IsProfessor == true && Model.User.IsAdmin == false)
 {
     <a class="btn btn-success" asp-area="" asp-controller="Professor" asp-action="Index">Предмети</a>
+}
+@if (Model.User != null && Model.User.IsProfessor == false && Model.User.IsAdmin == false)
+{
+    <a class="btn btn-success" asp-area="" asp-controller="Student" asp-action="Index">Предмети</a>
 }
 
 @if (Model.User != null)

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.7.0" />
+    <PackageReference Include="GemBox.Document" Version="2025.5.105" />
   </ItemGroup>
 
   <ItemGroup>

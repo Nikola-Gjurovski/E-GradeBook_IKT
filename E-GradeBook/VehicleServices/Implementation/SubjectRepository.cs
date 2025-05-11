@@ -88,8 +88,20 @@ namespace Services.Implementation
             model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
             model.SubjectId = id;
             model.Subject =  _subjectRepository.GetSubjectById(id);
+            
             return model;
         }
+        public SubjectProfessorsDTO GetProfessor2(Guid id,string UserId)
+        {
+            var model = new SubjectProfessorsDTO();
+            model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
+            model.SubjectId = id;
+            model.Subject = _subjectRepository.GetSubjectById(id);
+            model.UserId = UserId;
+
+            return model;
+        }
+
 
         public bool PostProfessor(SubjectProfessorsDTO model)
         {
@@ -116,8 +128,32 @@ namespace Services.Implementation
 
 
         }
+        public bool UpdateProfessor(SubjectProfessorsDTO model)
+        {
+            var user = _userRepository.Get(model.ProfessorId);
+            SubjectProfessor subjectProfessor = _subjectProfessor.GetSubjectProfessor(model.UserId, model.SubjectId);
+            ApplicationUser olduser =_userRepository.Get(subjectProfessor.ApplicationUserId);
+           
+            subjectProfessor.ApplicationUserId = model.ProfessorId;
+            subjectProfessor.Professor = user;
+            
+            _subjectProfessor.Update(subjectProfessor);
+            if (user.TeachingSubjects == null)
+                user.TeachingSubjects = new List<SubjectProfessor>();
+            user.TeachingSubjects.Add(subjectProfessor);
+            _userRepository.Update(user);
+           this.UpdateOldUser(olduser, subjectProfessor);
+            return true;
 
-        
+
+        }
+        private void UpdateOldUser(ApplicationUser user,SubjectProfessor subjectProfessor)
+        {
+            user.TeachingSubjects.Remove(subjectProfessor);
+            _userRepository.Update(user);
+        }
+
+
         public void DeleteProfessorSubject(Guid Id)
         {
             var model = _subjectProfessor.GetById(Id);
@@ -303,6 +339,7 @@ namespace Services.Implementation
                 _userRepository.Update(user);
                 _subjectProfessor.Update(subjectP);
 
+
                 return true;
             }
             catch (DbUpdateConcurrencyException)
@@ -313,6 +350,10 @@ namespace Services.Implementation
         }
         public void CreateGrades(SubjectProfessorsDTO model)
         {
+          if(_grades.Find(model.ProfessorId,model.SubjectId) !=null)
+            {
+                return;
+            }
             var user = _userRepository.Get(model.ProfessorId);
             var subjectP = _subjectProfessor.GetById(model.SubjectId);
             var gradesModel = new Grades

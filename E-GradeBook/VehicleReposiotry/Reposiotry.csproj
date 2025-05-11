@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="ExcelDataReader" Version="3.7.0" />
+    <PackageReference Include="GemBox.Document" Version="2025.5.105" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />

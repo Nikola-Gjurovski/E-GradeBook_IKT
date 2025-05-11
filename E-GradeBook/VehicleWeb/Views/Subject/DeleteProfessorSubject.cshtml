@@ -2,7 +2,7 @@
 
 
 
-<h3>Дали сте сигурни дека сакате да го избиршете професорот @Model.Professor.FirstName?</h3>
+<h3>Are you sure you want to delete the professor @Model.Professor.FirstName?</h3>
 
 
     <form asp-action="DeleteProfessorSubject" method="post">
@@ -11,3 +11,4 @@
         <input type="hidden" asp-for="ApplicationUserId" />
         <input type="submit" value="Delete" class="btn btn-danger" />
     </form>
+<a asp-action="Details" asp-route-id="@Model.SubjectId">Back to list</a> 

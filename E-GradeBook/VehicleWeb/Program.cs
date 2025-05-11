@@ -34,6 +34,8 @@ builder.Services.AddScoped(typeof(ISubjectStudent), typeof(SubjectStudentReposit
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<ISubject, SubjectRepository>();
 builder.Services.AddTransient<IGradesService, GradeService>();
+builder.Services.AddScoped<ICustomEmailSender, CustomEmailSender>();
+
 
 var app = builder.Build();
 

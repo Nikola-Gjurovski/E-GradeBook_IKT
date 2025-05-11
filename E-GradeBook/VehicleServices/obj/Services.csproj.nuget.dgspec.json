@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[3.7.0, )"
             },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
+            },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -126,6 +130,10 @@
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.7.0, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -211,6 +219,10 @@
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.7.0, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
             }
           },
           "imports": [

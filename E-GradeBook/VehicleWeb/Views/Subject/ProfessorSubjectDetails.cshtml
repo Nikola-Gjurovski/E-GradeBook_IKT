@@ -1,0 +1,69 @@
+﻿@model Domain.Identity.ApplicationUser
+
+@{
+    ViewData["Title"] = "Subjects Taught by Professor";
+}
+
+<h2>Subjects</h2>
+
+@if (Model.TeachingSubjects != null && Model.TeachingSubjects.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Subject Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subjectProfessor in Model.TeachingSubjects)
+            {
+                <tr>
+                    <td>@subjectProfessor.Subject.Name</td>
+                    <td>@subjectProfessor.Subject.Description</td>
+                    <td>@subjectProfessor.Subject.YearOfStudy</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@subjectProfessor.Subject.Id">Details</a> |
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    @if (Model.EnrolledSubjects != null && Model.EnrolledSubjects.Any())
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Име на предметот</th>
+                    <th>Опис</th>
+                    <th>Година на која се изучува</th>
+                   h>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var subjectStudent in Model.EnrolledSubjects)
+                {
+                    var subjectProfessor = subjectStudent.SubjectProfessor;
+                    var subject = subjectProfessor?.Subject;
+                    var professor = subjectProfessor?.Professor;
+
+                    <tr>
+                        <td>@subject?.Name</td>
+                        <td>@subject?.Description</td>
+                        <td>@subject?.YearOfStudy</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@subjectProfessor.Subject.Id">Details</a> |
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

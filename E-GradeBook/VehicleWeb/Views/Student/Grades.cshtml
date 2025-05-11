@@ -1,0 +1,181 @@
+﻿@model Domain.Grades
+
+@{
+    ViewData["Title"] = "Мои оценки";
+    Layout = "_Layout";
+}
+
+<<div class="container grade-container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="card-title mb-0">
+                <i class="fas fa-graduation-cap me-2"></i>My Grades Overview
+            </h3>
+        </div>
+
+        <div class="card-body">
+            <!-- Student Information -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="info-item">
+                        <span class="info-label">Student:</span>
+                        <span class="info-value">@Model.Student?.FirstName @Model.Student?.LastName</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grades Summary -->
+            <div class="grades-summary mb-4">
+                <div class="summary-card final-grade">
+                    <div class="summary-title">Final Grade</div>
+                    <div class="summary-value">@((Model.finalGrade.HasValue && Model.finalGrade.Value != 0) ? Model.finalGrade.Value.ToString() : "-")</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">First Semester Final Grade</div>
+                    <div class="summary-value">@((Model.firstSemesterFinal.HasValue && Model.firstSemesterFinal.Value != 0) ? Model.firstSemesterFinal.Value.ToString() : "-")</div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-title">Second Semester Final Grade</div>
+                    <div class="summary-value">@((Model.lastSemesterFinal.HasValue && Model.lastSemesterFinal.Value != 0) ? Model.lastSemesterFinal.Value.ToString() : "-")</div>
+                </div>
+            </div>
+
+            <!-- Semester Breakdown -->
+            <div class="row">
+                <!-- First Semester Grades -->
+                <div class="col-md-6">
+                    <div class="semester-card">
+                        <h5 class="semester-title mb-3">
+                            <i class="fas fa-snowflake me-2"></i>First Semester Grades
+                        </h5>
+                        @if (Model.firsSemester?.Count > 0)
+                        {
+                            <ul class="grade-list">
+                                @foreach (var grade in Model.firsSemester)
+                                {
+                                    <li class="grade-item">
+                                        <span class="grade-value">@((grade != 0) ? grade.ToString() : "-")</span>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted">No grades entered</p>
+                        }
+                    </div>
+                </div>
+
+                <!-- Second Semester Grades -->
+                <div class="col-md-6">
+                    <div class="semester-card">
+                        <h5 class="semester-title mb-3">
+                            <i class="fas fa-sun me-2"></i>Second Semester Grades
+                        </h5>
+                        @if (Model.lastSemester?.Count > 0)
+                        {
+                            <ul class="grade-list">
+                                @foreach (var grade in Model.lastSemester)
+                                {
+                                    <li class="grade-item">
+                                        <span class="grade-value">@((grade != 0) ? grade.ToString() : "-")</span>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="text-muted">No grades entered</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .grade-container {
+        max-width: 900px;
+    }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .info-label {
+        font-weight: 600;
+        color: #555;
+        margin-right: 8px;
+    }
+
+    .info-value {
+        color: #333;
+    }
+
+    .grades-summary {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .summary-card {
+        flex: 1;
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        border-left: 4px solid #6c757d;
+    }
+
+        .summary-card.final-grade {
+            border-left-color: #28a745;
+            background: #f0fff4;
+        }
+
+    .summary-title {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 5px;
+    }
+
+    .summary-value {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .semester-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        height: 100%;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .semester-title {
+        color: #495057;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .grade-list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .grade-item {
+        background: #e9ecef;
+        border-radius: 4px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .grade-value {
+        font-weight: 600;
+    }
+</style>

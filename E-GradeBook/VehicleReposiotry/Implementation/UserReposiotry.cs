@@ -27,8 +27,18 @@ namespace VehicleReposiotry.Implementation
 
         public ApplicationUser Get(string id)
         {
-            return entities.Include(u => u.TeachingSubjects)
-        .ThenInclude(ts => ts.Subject).SingleOrDefault(s => s.Id == id);
+            //    return entities.Include(u => u.TeachingSubjects)
+            //.ThenInclude(ts => ts.Subject).SingleOrDefault(s => s.Id == id);
+            return entities
+            .Include(u => u.TeachingSubjects)                                // Include TeachingSubjects
+                .ThenInclude(ts => ts.Subject)                              // Include Subject from SubjectProfessor
+            .Include(u => u.EnrolledSubjects)                               // Include EnrolledSubjects
+                .ThenInclude(es => es.SubjectProfessor)                     // Include SubjectProfessor from SubjectStudent
+                    .ThenInclude(sp => sp.Subject)                          // Include Subject from SubjectProfessor
+            .Include(u => u.EnrolledSubjects)                               // Again include for SubjectProfessor.Professor
+                .ThenInclude(es => es.SubjectProfessor)
+                    .ThenInclude(sp => sp.Professor)                        // Include Professor from SubjectProfessor
+            .SingleOrDefault(s => s.Id == id);
         }
         public void Insert(ApplicationUser entity)
         {

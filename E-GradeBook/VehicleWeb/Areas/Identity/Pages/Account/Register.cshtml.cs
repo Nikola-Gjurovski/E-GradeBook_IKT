@@ -21,6 +21,8 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
 using Domain.Identity;
+using Microsoft.AspNetCore.Mvc.Filters;
+using System.Security.Claims;
 
 namespace EShopWebApplication.Areas.Identity.Pages.Account
 {
@@ -127,8 +129,8 @@ namespace EShopWebApplication.Areas.Identity.Pages.Account
                 user.FirstName = Input.FirstName;
                 user.LastName = Input.LastName;
                 user.Adress=Input.Address;
-                user.IsAdmin = true;
-                user.IsProfessor = false;
+                user.IsAdmin = false;
+                user.IsProfessor = Input.IsProfesor;
                 
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
@@ -190,5 +192,18 @@ namespace EShopWebApplication.Areas.Identity.Pages.Account
             }
             return (IUserEmailStore<ApplicationUser>)_userStore;
         }
+        //public override void OnPageHandlerExecuting(PageHandlerExecutingContext context)
+        //{
+        //    var userId = context.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        //    // If user is not logged in OR not admin → redirect to home (or login)
+        //    if (userId == null || !_userManager.Users.Any(u => u.Id == userId && u.IsAdmin == true))
+        //    {
+        //        context.Result = new RedirectToPageResult("/Account/Login", new { area = "Identity" });
+        //    }
+
+        //    base.OnPageHandlerExecuting(context);
+        //}
+
     }
 }

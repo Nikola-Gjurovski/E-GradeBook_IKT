@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[3.7.0, )"
             },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
+            },
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -126,6 +130,10 @@
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.7.0, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -211,6 +219,10 @@
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.7.0, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
             }
           },
           "imports": [
@@ -288,35 +300,39 @@
               "target": "Package",
               "version": "[3.7.0, )"
             },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[2025.5.105, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.11, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
