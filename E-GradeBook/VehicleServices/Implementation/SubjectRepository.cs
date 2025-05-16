@@ -2,6 +2,7 @@
 using Domain.DTO;
 using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
+using Reposiotry.Implementation;
 using Reposiotry.Interface;
 using Services.Interface;
 using System;
@@ -84,8 +85,11 @@ namespace Services.Implementation
 
         public SubjectProfessorsDTO GetProfessor(Guid id)
         {
+           
+            var availableProfessors = _subjectProfessor.GetAvailableProfessors(id);
             var model = new SubjectProfessorsDTO();
-            model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
+            //model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
+            model.professors = availableProfessors;
             model.SubjectId = id;
             model.Subject =  _subjectRepository.GetSubjectById(id);
             
@@ -93,8 +97,10 @@ namespace Services.Implementation
         }
         public SubjectProfessorsDTO GetProfessor2(Guid id,string UserId)
         {
+            var availableProfessors = _subjectProfessor.GetAvailableProfessors(id);
             var model = new SubjectProfessorsDTO();
-            model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
+            //model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == true).ToList();
+            model.professors = availableProfessors;
             model.SubjectId = id;
             model.Subject = _subjectRepository.GetSubjectById(id);
             model.UserId = UserId;
@@ -239,8 +245,10 @@ namespace Services.Implementation
 
         public SubjectProfessorsDTO GetStudent(Guid id)
         {
+            var list = _subjectStudent.GetMissingtStudents(id);
             var model = new SubjectProfessorsDTO();
-            model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == false).ToList();
+            //model.professors = _userRepository.GetAll().Where(x => x.IsProfessor == false).ToList();
+            model.professors = list;
             model.SubjectId = id;
             model.Id = _subjectProfessor.GetById(id).SubjectId;
             model.UserId = _subjectProfessor.GetById(id).ApplicationUserId;

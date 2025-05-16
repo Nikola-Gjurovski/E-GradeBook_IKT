@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using Reposiotry.Interface;
 using System;
@@ -14,10 +15,12 @@ namespace Reposiotry.Implementation
     {
         private readonly ApplicationDbContext context;
         private DbSet<SubjectProfessor> entities;
+        private DbSet<ApplicationUser> users;
         public SubjectProfessorRepository(ApplicationDbContext context)
         {
             this.context = context;
             entities = context.Set<SubjectProfessor>();
+            users = context.Set<ApplicationUser>();
         }
         public void AddSubjectProfessor(SubjectProfessor Subject)
         {
@@ -59,6 +62,22 @@ namespace Reposiotry.Implementation
        .ToList();
 
         }
+        public List<ApplicationUser> GetAvailableProfessors(Guid subjectId)
+        {
+            
+            var assignedProfessorIds = entities
+                .Where(sp => sp.SubjectId == subjectId)
+                .Select(sp => sp.ApplicationUserId)
+                .ToList();
+
+            
+            var availableProfessors = users
+                .Where(u => u.IsProfessor == true && !assignedProfessorIds.Contains(u.Id))
+                .ToList();
+
+            return availableProfessors;
+        }
+
 
         public void Update(SubjectProfessor Subject)
         {

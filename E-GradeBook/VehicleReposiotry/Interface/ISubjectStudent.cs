@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Reposiotry.Interface
         public void DeleteSubject(SubjectStudent Subject);
         public SubjectStudent GetSubjectStudent(string ProfessorId,Guid subjectProfessor);
         public SubjectStudent GetById(Guid Id);
+        public List<ApplicationUser> GetMissingtStudents(Guid subjectProfessor);
     }
 }

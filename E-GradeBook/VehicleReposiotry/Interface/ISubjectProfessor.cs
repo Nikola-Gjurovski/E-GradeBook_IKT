@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,6 @@ namespace Reposiotry.Interface
         public SubjectProfessor GetById( Guid Id);
         public void Update(SubjectProfessor Subject);
         List<SubjectProfessor> GetAllSubjects(string ProfessorId);
+        public List<ApplicationUser> GetAvailableProfessors(Guid subjectId);
     }
 }
