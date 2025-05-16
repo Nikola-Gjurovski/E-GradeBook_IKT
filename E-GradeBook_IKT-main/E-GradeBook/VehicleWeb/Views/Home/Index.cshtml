@@ -1,0 +1,123 @@
+﻿@model Domain.DTO.HomePageDTO
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EGradeBook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #edf2f7;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .welcome-box {
+            background-color: #cce5ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .chat-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            height: 350px;
+        }
+
+        .chat-input {
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        .alert-alert-primary {
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg text-black" style="background-color:azure; width:1710px; margin-left:-300px; height:100px;">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav w-100 d-flex justify-content-around gap-1">
+                    <li class="nav-item" style="margin-left: 150px;">
+                        <a type="button" class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Home" asp-action="Index">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                            </svg>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Professor" asp-action="Grades">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
+                            <p>Grades</p>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @if (Model.User != null && Model.User.IsAdmin == true)
+    {
+        <a class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Subject" asp-action="Index">Admin Panel</a>
+    }
+    @if (Model.User != null && Model.User.IsProfessor == true && Model.User.IsAdmin == false)
+    {
+        <a class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Professor" asp-action="Index">Subjects</a>
+    }
+    @if (Model.User != null && Model.User.IsProfessor == false && Model.User.IsAdmin == false)
+    {
+        <a class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Student" asp-action="Index">Subjects</a>
+    }
+    <div class="container mt-4">
+        <div class="welcome-box">
+            @if (Model.User != null && Model.User.IsProfessor == true)
+            {
+                <h5><strong>Welcome, prof. @Model.User.LastName</strong></h5>
+            }
+            else
+            {
+                <h5><strong>Welcome</strong></h5>
+            }
+            
+        </div>
+        <div class="chat-box mt-3">
+            <h6>
+                <strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+                        <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135" />
+                        <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                    </svg> Electronic Assistant
+                </strong>
+            </h6>
+            <div class="mt-2">
+                <div class="alert alert-primary" style="height:150px; width:350px;">Hello! I'm your electronic assistant. How can I help you today?</div>
+            </div>
+
+            <div class="input-group mb-3" style="margin-top:70px;">
+                <input type="text" class="form-control" placeholder="Ask a question..." aria-label="Ask a question..." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
