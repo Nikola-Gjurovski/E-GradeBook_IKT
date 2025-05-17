@@ -1,0 +1,189 @@
+﻿@model Domain.SubjectProfessor
+
+@{
+    ViewData["Title"] = "Student Grades Management";
+    Layout = "_Layout";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>@TempData["ErrorMessage"]</strong>
+        <br />
+        @TempData["InvalidUsers"]
+    </div>
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    body {
+        background-color: #edf2f7;
+    }
+
+    .navbar {
+        background-color: #007bff;
+    }
+
+    .welcome-box {
+        background-color: #cce5ff;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .chat-box {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        height: 350px;
+    }
+
+    .chat-input {
+        border-radius: 25px;
+        padding: 10px;
+    }
+
+    .alert-alert-primary {
+        height: 450px;
+    }
+</style>
+<nav class="navbar navbar-expand-lg text-black" style="background-color:azure; width:1710px; margin-left:-300px; height:100px;">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav w-100 d-flex justify-content-around gap-1">
+                <li class="nav-item" style="margin-left: 150px;">
+                    <a type="button" class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Home" asp-action="Index">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                        </svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a type="button" class="btn btn-outline-primary d-flex flex-column align-items-center" style="margin-top:10px;" asp-area="" asp-controller="Professor" asp-action="Grades">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                        <p>Grades</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container professor-grade-container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h3 class="card-title mb-0">
+                    <i class="fas fa-chalkboard-teacher me-2"></i>@Model.Professor.FirstName - @Model.Subject.Name
+                </h3>
+                <a asp-action="Index" class="btn btn-light btn-sm">
+                    <i class="fas fa-arrow-left me-1"></i> Back
+                </a>
+            </div>
+        </div>
+
+        <!-- Grade Action Buttons (For All Students) -->
+        <div class="card-body border-bottom">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <a class="btn btn-primary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=1 asp-route-UserId="@Model.ApplicationUserId">
+
+                    <i class="fas fa-file-import me-1"></i> Import Grades (First Semester)
+                </a>
+
+                <a class="btn btn-secondary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=4 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-plus-circle me-1"></i> Add Final Grade (First)
+                </a>
+
+                <a class="btn btn-primary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=2 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-file-import me-1"></i> Import Grades (Second Semester)
+                </a>
+
+                <a class="btn btn-secondary"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=5 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-plus-circle me-1"></i> Add Final Grade (Second)
+                </a>
+
+                <a class="btn btn-success"
+                   asp-controller="Professor"
+                   asp-action="ExcellGradeReader"
+                   asp-route-SubjectId="@Model.SubjectId" asp-route-Id=3 asp-route-UserId="@Model.ApplicationUserId">
+                    <i class="fas fa-star me-1"></i> Add Final Grade
+                </a>
+                <a class="btn btn-success" asp-action="ExportGradesReport" asp-route-SubjectId="@Model.SubjectId"
+                   asp-route-ProfessorId="@Model.ApplicationUserId">
+                    <i class="fas fa-star me-1"></i> Export Grades
+                </a>
+            </div>
+        </div>
+
+        <!-- Students Table -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Grades</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ProfessorStudents)
+                        {
+                            <tr>
+                                <td>@item.Student.FirstName</td>
+                                <td>@item.Student.LastName</td>
+                                <td>
+                                    <a class="btn btn-sm btn-info"
+                                       asp-controller="Professor"
+                                       asp-action="Grades"
+                                       asp-route-SubjectId="@Model.SubjectId"
+                                       asp-route-StudentId="@item.Student.Id"
+                                       asp-route-Professorid="@Model.ApplicationUserId">
+                                        <i class="fas fa-list-check me-1"></i> Details
+                                    </a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .professor-grade-container {
+        max-width: 1400px;
+    }
+
+    .table th {
+        white-space: nowrap;
+        vertical-align: middle;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+    .grade-buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+</style>

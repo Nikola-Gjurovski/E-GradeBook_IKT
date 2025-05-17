@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VehicleWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/VehicleWeb.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
+</head>
+<body>
+    <style>
+        body {
+            background-color: #edf2f7;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white;
+        }
+
+        .welcome-box {
+            background-color: #cce5ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .chat-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            height: 300px;
+        }
+
+        .chat-input {
+            border-radius: 25px;
+            padding: 10px;
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="https://img.freepik.com/premium-vector/letter-e-education-logo-book-concept-training-career-sign-university-academy-graduation-logo_754537-1474.jpg?w=360" alt="E-GradeBook Logo" style="height: 40px; width: auto;" />
+                </a>
+                <h3 class="text-white">E-GradeBook</h3>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+
+                    <partial name="_LoginPartial" />
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @* <footer class="footer footer-custom text-muted">
+    <div class="container">
+    &copy; 2024 - VehicleWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.tiny.cloud/1/g28lhnxtlihu4l4a381gw7tz47voznshwbi10lmsvlekrfme/tinymce/6/tinymce.min.js" referrerpolicy="origin">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

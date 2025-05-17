@@ -1,0 +1,82 @@
+﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+/* Custom CSS for VehicleWeb UI */
+
+/* Navbar brand styling */
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: #ffffff; /* White text */
+}
+
+/* Links */
+a {
+    color: #0077cc; /* Blue color for links */
+}
+
+/* Buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2; /* Blue background */
+    border-color: #1861ac; /* Darker blue border */
+}
+
+/* Active nav links */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #28a745; /* Green background */
+    border-color: #1861ac; /* Darker blue border */
+}
+
+/* Borders */
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Box shadow */
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* Accept policy button */
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Footer styling */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #343a40; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+    .footer a {
+        color: #0077cc; /* Blue links */
+    }
+
+/* Navbar custom colors */
+.navbar-custom {
+    background-color: #28a745; /* Green background */
+    color: #ffffff; /* White text */
+}
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        color: #ffffff; /* White text */
+    }
+
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .nav-link:hover {
+            color: #f8f9fa; /* Light grey on hover */
+        }
