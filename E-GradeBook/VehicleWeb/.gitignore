@@ -1,0 +1,12 @@
+﻿# Ignore Visual Studio folder
+.vs/
+# Ignore build output
+bin/
+obj/
+*.suo
+*.user
+*.vsidx
+*.pdb
+*.exe
+*.dll
+*.cache
